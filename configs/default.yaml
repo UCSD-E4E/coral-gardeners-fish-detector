@@ -1,0 +1,53 @@
+input:
+  image_extensions: [".jpg", ".jpeg", ".png", ".bmp", ".webp"]
+
+segmentation:
+  backend: sam3
+  prompts: ["fish", "small fish"]
+  min_confidence: 0.25
+  max_detections_per_image: 100
+  use_tiling: false
+  tile_size: 768
+  tile_overlap: 0.25
+  nms_iou_threshold: 0.40
+
+postprocess:
+  min_box_area: 100
+  min_box_side: 8
+  max_aspect_ratio: 8.0
+  enable_buoy_filter: true
+  red_orange_ratio_threshold: 0.35
+  circularity_threshold: 0.75
+  rope_check_enabled: true
+
+crop:
+  padding_percent: 0.20
+  min_crop_size: 64
+  save_masked_crop: true
+
+output:
+  save_crops: false
+  save_masks: false
+  save_overlays: false
+  save_contact_sheet: false
+
+classification:
+  primary_model_id: "hf-hub:imageomics/bioclip-2.5-vith14"
+  fallback_model_id: "hf-hub:imageomics/bioclip-2"
+  allow_original_bioclip: false
+  batch_size: 1
+  device: "auto"
+  precision: "fp16"
+  unknown_threshold: 0.00
+  uncertain_margin: 0.00
+  cache_text_embeddings: true
+  classify_masked_crops: true
+
+preprocessing:
+  enabled: false
+  method: "none"
+  apply_to_segmentation: true
+  apply_to_classification: false
+
+evaluation:
+  iou_threshold: 0.25

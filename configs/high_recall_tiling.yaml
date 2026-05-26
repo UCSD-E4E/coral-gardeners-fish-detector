@@ -1,0 +1,4 @@
+segmentation:
+  use_tiling: true
+  tile_size: 768
+  tile_overlap: 0.25

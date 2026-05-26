@@ -1,0 +1,5 @@
+output:
+  save_crops: true
+  save_masks: true
+  save_overlays: true
+  save_contact_sheet: true

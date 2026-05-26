@@ -1,0 +1,87 @@
+regions:
+  gulf_of_thailand:
+    names:
+      - Rastrelliger brachysoma
+      - Rastrelliger kanagurta
+      - Lates calcarifer
+      - Rachycentron canadum
+      - Scomberomorus guttatus
+      - Scomberomorus commerson
+      - Epinephelus coioides
+      - Epinephelus sexfasciatus
+      - Epinephelus malabaricus
+      - Pristipomoides multidens
+      - Lutjanus malabaricus
+      - Sardinella fimbriata
+      - Sardinella gibbosa
+      - Anodontostoma chacunda
+      - Nemipterus japonicus
+      - Caesio cuning
+      - Cynoglossus lingua
+      - Terapon jarbua
+      - Stolephorus commersonnii
+      - Pastinachus sephen
+      - Abalistes stellaris
+      - Arothron nigropunctatus
+      - Rhincodon typus
+      - Aetobatus narinari
+      - Rhynchobatus djiddensis
+    nc: 25
+
+  moorea:
+    names:
+      - Chaetodon auriga
+      - Chaetodon citrinellus
+      - Chaetodon lunula
+      - Chaetodon trifascialis
+      - Acanthurus nigrofuscus
+      - Acanthurus triostegus
+      - Ctenochaetus striatus
+      - Zebrasoma scopas
+      - Chlorurus sordidus
+      - Scarus psittacus
+      - Scarus oviceps
+      - Stegastes nigricans
+      - Dascyllus aruanus
+      - Chromis viridis
+      - Thalassoma hardwicke
+      - Thalassoma quinquevittatum
+      - Halichoeres trimaculatus
+      - Epinephelus merra
+      - Lutjanus fulvus
+      - Mulloidichthys flavolineatus
+      - Parupeneus multifasciatus
+      - Rhinecanthus aculeatus
+      - Arothron meleagris
+      - Zanclus cornutus
+      - Naso lituratus
+    nc: 25
+
+  fiji:
+    names:
+      - Acanthurus lineatus
+      - Acanthurus nigrofuscus
+      - Acanthurus triostegus
+      - Ctenochaetus striatus
+      - Naso lituratus
+      - Zebrasoma scopas
+      - Chaetodon auriga
+      - Chaetodon lunula
+      - Chaetodon pelewensis
+      - Chaetodon rafflesii
+      - Chlorurus sordidus
+      - Scarus psittacus
+      - Scarus ghobban
+      - Dascyllus aruanus
+      - Chromis viridis
+      - Amphiprion barberi
+      - Thalassoma hardwicke
+      - Halichoeres hortulanus
+      - Epinephelus merra
+      - Lutjanus fulvus
+      - Mulloidichthys flavolineatus
+      - Parupeneus multifasciatus
+      - Rhinecanthus aculeatus
+      - Arothron meleagris
+      - Zanclus cornutus
+    nc: 25

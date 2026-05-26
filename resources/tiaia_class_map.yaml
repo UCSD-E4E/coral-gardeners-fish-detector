@@ -1,0 +1,29 @@
+yolo_to_latin:
+  surgeonfish:
+    - Acanthurus nigrofuscus
+    - Acanthurus triostegus
+    - Ctenochaetus striatus
+    - Zebrasoma scopas
+    - Naso lituratus
+
+  parrotfish:
+    - Scarus oviceps
+    - Scarus psittacus
+    - Chlorurus sordidus
+
+  butterflyfish:
+    - Chaetodon auriga
+    - Chaetodon citrinellus
+    - Chaetodon lunula
+
+  brown_tang:
+    - Acanthurus nigrofuscus
+    - Ctenochaetus striatus
+    - Zebrasoma scopas
+    - Zebrasoma flavescens
+
+  fish:
+    - "*"
+
+ignore_classes:
+  - cushion_starfish
