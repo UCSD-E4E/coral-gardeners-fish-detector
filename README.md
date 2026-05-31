@@ -261,6 +261,31 @@ Useful Tiaia eval flags:
 
 These are classification-only datasets. They do not test SAM3 because there are no boxes or masks.
 
+Build or update a region top-25 fish prior from OBIS/GBIF observations:
+
+```bash
+PYTHONPATH=src python3 scripts/build_top25_region_prior.py \
+  --lat -17.54 \
+  --lon -149.83 \
+  --radius-km 40 \
+  --top-n 25 \
+  --source both \
+  --region-key moorea \
+  --out-yaml resources/top25.yaml
+```
+
+The script reads any existing `resources/top25.yaml`, updates only the selected `--region-key`, and writes the same YAML format used by BioCLIP classification:
+
+```yaml
+regions:
+  moorea:
+    names:
+      - Chaetodon auriga
+    nc: 25
+```
+
+Use `--out-csv <path>` to also save the ranked source counts for inspection. By default, broader taxa are filtered out and only Latin binomial species names are written; pass `--allow-higher-taxa` to include genera or higher-level taxa.
+
 Download Fiji:
 
 ```bash
