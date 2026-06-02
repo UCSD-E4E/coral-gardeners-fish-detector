@@ -10,6 +10,23 @@ image/folder -> SAM3 detection -> postprocessing/NMS -> temporary crops -> BioCL
 
 Default output is lightweight: metadata and stats only. Crops, masks, overlays, and contact sheets are optional debug artifacts.
 
+## Pipeline Diagram
+
+```mermaid
+flowchart LR
+    A["Reef image or image folder"] --> B["SAM3 fish detection"]
+    B --> C["Postprocessing + NMS"]
+    C --> D["Padded fish crops"]
+    D --> E["BioCLIP 2.5 / BioCLIP 2"]
+    F["Region top-25 species list"] --> E
+    E --> G["Species predictions"]
+    C --> H["Detection metadata"]
+    G --> I["CSV / JSON summaries"]
+    H --> I
+    C -. optional .-> J["Masks + overlays"]
+    D -. optional .-> K["Saved crops + contact sheet"]
+```
+
 ## Project Overview
 
 This project is a reproducible computer vision pipeline for reef fish imagery. It was built for the UCSD x National Geographic / Coral Gardeners class project and focuses on turning raw underwater images into structured fish detections, crops, species predictions, and evaluation metadata.
