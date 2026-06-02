@@ -10,14 +10,95 @@ image/folder -> SAM3 detection -> postprocessing/NMS -> temporary crops -> BioCL
 
 Default output is lightweight: metadata and stats only. Crops, masks, overlays, and contact sheets are optional debug artifacts.
 
+## Project Overview
+
+This project is a reproducible computer vision pipeline for reef fish imagery. It was built for the UCSD x National Geographic / Coral Gardeners class project and focuses on turning raw underwater images into structured fish detections, crops, species predictions, and evaluation metadata.
+
+The pipeline separates the problem into two stages:
+
+1. **Localization**: SAM3 is prompted to find fish in reef images, then detections are filtered with postprocessing and non-maximum suppression.
+2. **Species classification**: accepted fish crops are classified with BioCLIP 2.5 or BioCLIP 2 using a region-specific top-25 species list.
+
+The project is designed to be useful in two settings:
+
+- **Field/project workflows**: process folders of reef images and produce compact CSV/JSON summaries.
+- **Experiment workflows**: evaluate detection and classification behavior on labeled datasets such as Tiaia YOLO and classification-only GBIF/iNaturalist image folders.
+
+By default, runs save lightweight metadata only. Crops, masks, overlays, and contact sheets can be enabled when visual inspection or demos are needed.
+
+## Team
+
+- Aleksa Popovic
+- Ewan Shen
+- Kaleigh Edusada
+- Marlyn Arque Rupa
+- Vibusha Vadivel
+
+## Repository Guide
+
+```text
+class_materials/                 submitted class project documents and slides
+configs/                         YAML defaults and experiment presets
+data/                            local datasets and example images
+external/                        local third-party checkouts, such as SAM3
+models/                          local model caches; weights are not committed
+outputs/                         generated runs, evals, metadata, and artifacts
+resources/top25.yaml             region-specific BioCLIP species candidates
+resources/tiaia_class_map.yaml   Tiaia broad-class to Latin-species mapping
+scripts/                         evaluation, data download, and batch-run scripts
+src/coral_fish_pipeline/         installable Python package
+tests/                           unit and integration tests
+```
+
+Important package modules:
+
+```text
+segmentation/      SAM3 runner, mock segmenter, mask utilities, postprocessing
+cropping/          crop creation from accepted detections
+classification/    BioCLIP classifier, prompts, region species loader
+evaluation/        detection and classification metrics
+io/                image loading, YOLO label loading, metadata writers
+visualization/     overlays and contact sheets
+```
+
+## Models, Data, and External Tools
+
+Model weights and private credentials are intentionally not stored in this repository.
+
+Required model/tool access:
+
+- **SAM3**: installed separately from `facebookresearch/sam3`; real runs require access to the gated `facebook/sam3` Hugging Face model.
+- **BioCLIP**: classification uses `hf-hub:imageomics/bioclip-2.5-vith14` by default, with `hf-hub:imageomics/bioclip-2` as a lower-memory fallback.
+- **PyTorch**: install the build that matches your CUDA/CPU environment from the official PyTorch selector.
+
+Supported data workflows:
+
+- image or folder input for the main pipeline;
+- Tiaia YOLO-format detection and classification evaluation;
+- DeepFish SAM3 detection evaluation;
+- GBIF/iNaturalist-style classification-only datasets for regional BioCLIP sanity checks.
+
+Do not commit Hugging Face tokens, API keys, private dataset links, downloaded model weights, or unreleased/private data.
+
+## Project Materials
+
+This README is the main quick-start and reproduction document. Class deliverables are included in `class_materials/`:
+
+- [Project Plan](class_materials/Coral%20Gardeners%20Project%20Plan.pdf)
+- [Oral Update](class_materials/Coral%20Gardeners%20Oral%20Update.pptx)
+- [Milestone Report](class_materials/Coral%20Gardeners%20Milestone%20Report.pdf)
+- [Final Presentation](class_materials/Coral%20Gardeners%20Final%20Presentation.pptx)
+
+The GitHub Wiki or a future `docs/` folder can hold longer writeups, additional figures, demo videos, and reproduction notes.
+
 ## Platform Notes
 
-| Platform | Recommendation |
-| --- | --- |
-| Windows native | Not recommended for real SAM3 because Triton/SAM3 usually fails |
-| Windows + WSL Ubuntu | Recommended for Windows users |
-| Linux + NVIDIA GPU | Best supported full-pipeline setup |
-| macOS | OK for BioCLIP/GBIF/dev tools, but real SAM3 may not work depending on official support |
+| Platform             | Recommendation                                                                          |
+| -------------------- | --------------------------------------------------------------------------------------- |
+| Windows native       | Not recommended for real SAM3 because Triton/SAM3 usually fails                         |
+| Windows + WSL Ubuntu | Recommended for Windows users                                                           |
+| Linux + NVIDIA GPU   | Best supported full-pipeline setup                                                      |
+| macOS                | OK for BioCLIP/GBIF/dev tools, but real SAM3 may not work depending on official support |
 
 For real SAM3 runs, use Linux or WSL Ubuntu with an NVIDIA GPU. Native Windows and macOS can still be useful for development, metadata tools, BioCLIP-only checks, and mock pipeline tests.
 
@@ -131,34 +212,34 @@ outputs/run_light/metadata/
 
 ## Common Pipeline Flags
 
-| Flag | Purpose |
-| --- | --- |
-| `--input <path-to-images>` | Image file or folder to process |
-| `--region <name>` | Region key from `resources/top25.yaml`, used for BioCLIP species candidates |
-| `--output <dir>` | Output directory for metadata and optional artifacts |
-| `--segmenter sam3` | Use real SAM3 detection |
-| `--segmenter mock` | Use lightweight mock detection for wiring/tests |
-| `--bioclip-model <id>` | Choose BioCLIP model, usually `hf-hub:imageomics/bioclip-2.5-vith14` |
-| `--limit <n>` | Process only the first `n` images |
-| `--skip-classification` | Run detection/cropping only; no BioCLIP classification |
-| `--config <yaml>` | Load config overrides, such as tiling settings |
-| `--region-yaml <path>` | Use a different region species YAML |
-| `--use-tiling` | Enable SAM3 tiled detection from the CLI |
-| `--tile-size <pixels>` | Tile size when tiling is enabled |
-| `--tile-overlap <fraction>` | Tile overlap when tiling is enabled |
-| `--preprocess clahe_luminance` | Apply CLAHE preprocessing to SAM3 detection input |
+| Flag                             | Purpose                                                                       |
+| -------------------------------- | ----------------------------------------------------------------------------- |
+| `--input <path-to-images>`     | Image file or folder to process                                               |
+| `--region <name>`              | Region key from `resources/top25.yaml`, used for BioCLIP species candidates |
+| `--output <dir>`               | Output directory for metadata and optional artifacts                          |
+| `--segmenter sam3`             | Use real SAM3 detection                                                       |
+| `--segmenter mock`             | Use lightweight mock detection for wiring/tests                               |
+| `--bioclip-model <id>`         | Choose BioCLIP model, usually `hf-hub:imageomics/bioclip-2.5-vith14`        |
+| `--limit <n>`                  | Process only the first `n` images                                           |
+| `--skip-classification`        | Run detection/cropping only; no BioCLIP classification                        |
+| `--config <yaml>`              | Load config overrides, such as tiling settings                                |
+| `--region-yaml <path>`         | Use a different region species YAML                                           |
+| `--use-tiling`                 | Enable SAM3 tiled detection from the CLI                                      |
+| `--tile-size <pixels>`         | Tile size when tiling is enabled                                              |
+| `--tile-overlap <fraction>`    | Tile overlap when tiling is enabled                                           |
+| `--preprocess clahe_luminance` | Apply CLAHE preprocessing to SAM3 detection input                             |
 
 `--segmenter mock` is only for wiring and output tests. It is not a model-quality check.
 
 ## Optional Output Flags
 
-| Flag | Saves |
-| --- | --- |
-| `--save-crops` | crop images and `crops_by_species` |
-| `--save-masks` | SAM3 masks |
-| `--save-overlays` | visual overlays |
-| `--save-contact-sheet` | contact sheet |
-| `--save-debug-artifacts` | all debug outputs |
+| Flag                       | Saves                                |
+| -------------------------- | ------------------------------------ |
+| `--save-crops`           | crop images and `crops_by_species` |
+| `--save-masks`           | SAM3 masks                           |
+| `--save-overlays`        | visual overlays                      |
+| `--save-contact-sheet`   | contact sheet                        |
+| `--save-debug-artifacts` | all debug outputs                    |
 
 Example:
 
@@ -246,16 +327,16 @@ PYTHONPATH=src python3 scripts/evaluate_deepfish_sam3.py \
 
 Useful Tiaia eval flags:
 
-| Flag | Purpose |
-| --- | --- |
-| `--limit <n>` | Evaluate only the first `n` selected images |
-| `--start-index <n>` / `--end-index <n>` | Evaluate a slice of the split |
-| `--shard-index <i>` / `--num-shards <n>` | Split a run into shards |
-| `--resume` | Reuse existing checkpoints when present |
-| `--skip-existing` | Skip images with existing checkpoints |
-| `--save-matched-crops` | Keep matched crop images for classification reruns |
-| `--classify-existing-crops <path>` | Run classification from an existing matched-crops directory/CSV |
-| `--matched-crops-csv <path>` | Run classification from a specific `matched_crops.csv` |
+| Flag                                         | Purpose                                                         |
+| -------------------------------------------- | --------------------------------------------------------------- |
+| `--limit <n>`                              | Evaluate only the first `n` selected images                   |
+| `--start-index <n>` / `--end-index <n>`  | Evaluate a slice of the split                                   |
+| `--shard-index <i>` / `--num-shards <n>` | Split a run into shards                                         |
+| `--resume`                                 | Reuse existing checkpoints when present                         |
+| `--skip-existing`                          | Skip images with existing checkpoints                           |
+| `--save-matched-crops`                     | Keep matched crop images for classification reruns              |
+| `--classify-existing-crops <path>`         | Run classification from an existing matched-crops directory/CSV |
+| `--matched-crops-csv <path>`               | Run classification from a specific `matched_crops.csv`        |
 
 ## GBIF/iNaturalist Classification Datasets
 
