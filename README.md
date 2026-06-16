@@ -121,34 +121,49 @@ For real SAM3 runs, use Linux or WSL Ubuntu with an NVIDIA GPU. Native Windows a
 
 ## Setup
 
-From `<project-root>`:
+This project uses [uv](https://docs.astral.sh/uv/) for environment and dependency management. Install uv first if you don't have it:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip setuptools wheel
-pip install -e ".[dev]"
-pip install requests pyyaml tqdm pandas
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-Install PyTorch using the official selector for your machine:
+From `<project-root>`, create the environment and install all dependencies (including the `dev` group) from the lockfile:
 
-https://pytorch.org/get-started/locally/
+```bash
+uv sync
+```
 
-Install official SAM3 separately in the same environment:
+This creates a `.venv/` in the project root. Prefix commands with `uv run` to use it without manually activating, or activate it with `source .venv/bin/activate`.
+
+### NixOS / Nix
+
+On NixOS, prebuilt wheels (opencv, torch) fail to find system libraries like `libxcb.so.1`, and source builds fail without a toolchain. A `flake.nix` provides an FHS dev shell with the graphics/X libs, a C/Fortran toolchain, and the CUDA driver path so the standard uv workflow just works — including GPU torch:
+
+```bash
+nix develop      # enter the FHS shell (adds libs + CUDA, pins Python 3.11)
+uv sync          # then the normal uv workflow
+uv run pytest tests -q
+```
+
+Python is pinned to 3.11 (via `.python-version` and `UV_PYTHON`) so every dependency has a wheel and nothing builds from source. CUDA torch picks up the host driver from `/run/opengl-driver/lib`; verify with `uv run python -c "import torch; print(torch.cuda.is_available())"`.
+
+PyTorch is installed automatically from the lockfile. If you need a specific CUDA/CPU build for your machine, see the official selector: https://pytorch.org/get-started/locally/
+
+Install official SAM3 separately into the same environment:
 
 ```bash
 mkdir -p external
 git clone https://github.com/facebookresearch/sam3.git external/sam3
-pip install -e external/sam3
+uv pip install -e external/sam3 einops pycocotools psutil
 ```
 
-Real SAM3 is not installed by this package. The `external/` folder is ignored by Git so the cloned SAM3 repo is not committed.
+`einops`, `pycocotools`, and `psutil` are imported by SAM3's core code but missing from its declared dependencies, so they must be installed alongside it.
 
-Set environment variables:
+Real SAM3 is not installed by this package. The `external/` folder is ignored by Git so the cloned SAM3 repo is not committed. Because SAM3 and these extra packages live outside the uv lockfile, re-run this `uv pip install` line after any `uv sync` (which prunes packages not in the lock).
+
+Set environment variables (`uv sync` installs the package in editable mode, so `PYTHONPATH` is not required, but you can still set it for ad-hoc `python` invocations):
 
 ```bash
-export PYTHONPATH="$PWD/src"
 export HF_HOME="$PWD/models/hf_cache"
 ```
 
@@ -164,7 +179,7 @@ SAM3 uses the gated `facebook/sam3` Hugging Face repo. Accept/request access on 
 Test SAM3 model access:
 
 ```bash
-python3 - <<'PY'
+uv run python - <<'PY'
 from huggingface_hub import hf_hub_download
 p = hf_hub_download(repo_id="facebook/sam3", filename="config.json", token=True)
 print("SAM3 config downloaded:", p)
@@ -174,22 +189,22 @@ PY
 Basic checks:
 
 ```bash
-python3 -c "import coral_fish_pipeline; print('pipeline OK')"
-python3 -c "import torch; print('CUDA:', torch.cuda.is_available())"
-python3 -c "import open_clip; print('BioCLIP deps OK')"
+uv run python -c "import coral_fish_pipeline; print('pipeline OK')"
+uv run python -c "import torch; print('CUDA:', torch.cuda.is_available())"
+uv run python -c "import open_clip; print('BioCLIP deps OK')"
 ```
 
 Optional SAM3 check:
 
 ```bash
-python3 -c "from sam3.model_builder import build_sam3_image_model; print('SAM3 import OK')"
+uv run python -c "from sam3.model_builder import build_sam3_image_model; print('SAM3 import OK')"
 ```
 
-After editable install, you can use either command style:
+The package is installed by `uv sync`, so you can use either command style:
 
 ```bash
-PYTHONPATH=src python3 -m coral_fish_pipeline.cli --help
-coral-fish-pipeline --help
+uv run python -m coral_fish_pipeline.cli --help
+uv run coral-fish-pipeline --help
 ```
 
 ## Run The Main Pipeline
@@ -208,7 +223,7 @@ Original BioCLIP is intentionally blocked; use BioCLIP 2.5 or BioCLIP 2.
 Lightweight default:
 
 ```bash
-PYTHONPATH=src python3 -m coral_fish_pipeline.cli run \
+uv run coral-fish-pipeline run \
   --input <path-to-images> \
   --region moorea \
   --output outputs/run_light \
@@ -261,7 +276,7 @@ outputs/run_light/metadata/
 Example:
 
 ```bash
-PYTHONPATH=src python3 -m coral_fish_pipeline.cli run \
+uv run coral-fish-pipeline run \
   --input <path-to-images> \
   --region moorea \
   --output outputs/run_debug \
@@ -281,7 +296,7 @@ Default:
 High-recall tiling:
 
 ```bash
-PYTHONPATH=src python3 -m coral_fish_pipeline.cli run \
+uv run coral-fish-pipeline run \
   --input <path-to-images> \
   --region moorea \
   --output outputs/run_high_recall \
@@ -293,7 +308,7 @@ PYTHONPATH=src python3 -m coral_fish_pipeline.cli run \
 Experimental CLAHE preprocessing:
 
 ```bash
-PYTHONPATH=src python3 -m coral_fish_pipeline.cli run \
+uv run coral-fish-pipeline run \
   --input <path-to-images> \
   --region moorea \
   --output outputs/run_clahe \
@@ -310,7 +325,7 @@ Evaluation defaults are lightweight too: metrics and CSV/JSON metadata are saved
 Tiaia YOLO detection eval:
 
 ```bash
-PYTHONPATH=src python3 scripts/evaluate_tiaia_yolo.py \
+uv run python scripts/evaluate_tiaia_yolo.py \
   --dataset <path-to-tiaia-yolo-dataset> \
   --split train \
   --output outputs/eval_tiaia \
@@ -321,7 +336,7 @@ PYTHONPATH=src python3 scripts/evaluate_tiaia_yolo.py \
 Tiaia detection + classification eval:
 
 ```bash
-PYTHONPATH=src python3 scripts/evaluate_tiaia_yolo.py \
+uv run python scripts/evaluate_tiaia_yolo.py \
   --dataset <path-to-tiaia-yolo-dataset> \
   --split train \
   --output outputs/eval_tiaia_cls \
@@ -335,7 +350,7 @@ PYTHONPATH=src python3 scripts/evaluate_tiaia_yolo.py \
 DeepFish eval:
 
 ```bash
-PYTHONPATH=src python3 scripts/evaluate_deepfish_sam3.py \
+uv run python scripts/evaluate_deepfish_sam3.py \
   --dataset <path-to-deepfish-dataset> \
   --split valid \
   --output outputs/eval_deepfish \
@@ -387,7 +402,7 @@ Use `--out-csv <path>` to also save the ranked source counts for inspection. By 
 Download Fiji:
 
 ```bash
-PYTHONPATH=src python3 scripts/download_gbif_region_media.py \
+uv run python scripts/download_gbif_region_media.py \
   --region fiji \
   --species-yaml resources/top25.yaml \
   --out data/gbif_media \
@@ -397,7 +412,7 @@ PYTHONPATH=src python3 scripts/download_gbif_region_media.py \
 Evaluate Fiji:
 
 ```bash
-PYTHONPATH=src python3 scripts/evaluate_bioclip_folder_dataset.py \
+uv run python scripts/evaluate_bioclip_folder_dataset.py \
   --dataset data/gbif_media/fiji \
   --region fiji \
   --output outputs/eval_bioclip_fiji_gbif \
@@ -421,13 +436,13 @@ GBIF/iNaturalist-style images may overlap with BioCLIP training data, so this is
 ## Tests
 
 ```bash
-PYTHONPATH=src pytest tests -q --basetemp=.pytest-tmp
+uv run pytest tests -q --basetemp=.pytest-tmp
 ```
 
 Tiny mock check:
 
 ```bash
-PYTHONPATH=src python3 -m coral_fish_pipeline.cli run \
+uv run coral-fish-pipeline run \
   --input data/examples \
   --region moorea \
   --output outputs/dev_mock_check \
@@ -439,6 +454,6 @@ PYTHONPATH=src python3 -m coral_fish_pipeline.cli run \
 
 - `ModuleNotFoundError: triton`: use WSL/Linux for real SAM3.
 - Hugging Face 401 for `facebook/sam3`: accept/request model access and run `hf auth login`.
-- `ModuleNotFoundError: requests`: run `pip install requests pyyaml tqdm pandas`.
+- `ModuleNotFoundError` for a dependency: run `uv sync` to reinstall from the lockfile.
 - CUDA out of memory: close GPU-heavy apps or use `hf-hub:imageomics/bioclip-2`.
 - Need visual outputs: rerun with `--save-debug-artifacts`.

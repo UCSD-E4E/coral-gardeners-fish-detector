@@ -85,3 +85,20 @@ regions:
       - Arothron meleagris
       - Zanclus cornutus
     nc: 25
+
+  little_cayman: # Reference: REEF species of interest.
+    names:
+      - Lachnolaimus maximus
+      - Mycteroperca bonaci
+      - Epinephelus itajara
+      - Epinephelus striatus
+      - Epinephelus morio
+      - Ocyurus chrysurus
+      - Lutjanus griseus
+      - Lutjanus analis
+      - Scarus coeruleus
+      - Scarus coelestinus
+      - Scarus guacamaia
+      - Sparisoma viride
+      - Mycteroperca interstitialis
+    nc: 13
