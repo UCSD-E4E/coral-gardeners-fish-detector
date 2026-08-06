@@ -1,0 +1,62 @@
+{
+  "condition": "prior13",
+  "n": 351,
+  "matched": 274,
+  "recall": 0.7806267806267806,
+  "species_acc_matched_top1": 0.7262773722627737,
+  "species_acc_matched_top5": 0.8905109489051095,
+  "e2e_top1": 0.5669515669515669,
+  "e2e_top5": 0.6951566951566952,
+  "per_species": {
+    "Lachnolaimus maximus": {
+      "e2e_correct": 100,
+      "matched": 116,
+      "n": 155
+    },
+    "Sparisoma viride": {
+      "e2e_correct": 50,
+      "matched": 68,
+      "n": 84
+    },
+    "Scarus guacamaia": {
+      "e2e_correct": 7,
+      "matched": 12,
+      "n": 12
+    },
+    "Scarus coeruleus": {
+      "e2e_correct": 13,
+      "matched": 25,
+      "n": 26
+    },
+    "Mycteroperca bonaci": {
+      "e2e_correct": 0,
+      "matched": 13,
+      "n": 25
+    },
+    "Scarus coelestinus": {
+      "e2e_correct": 10,
+      "matched": 10,
+      "n": 10
+    },
+    "Epinephelus striatus": {
+      "e2e_correct": 15,
+      "matched": 20,
+      "n": 25
+    },
+    "Ocyurus chrysurus": {
+      "e2e_correct": 2,
+      "matched": 8,
+      "n": 10
+    },
+    "Epinephelus itajara": {
+      "e2e_correct": 2,
+      "matched": 2,
+      "n": 3
+    },
+    "Lutjanus analis": {
+      "e2e_correct": 0,
+      "matched": 0,
+      "n": 1
+    }
+  }
+}

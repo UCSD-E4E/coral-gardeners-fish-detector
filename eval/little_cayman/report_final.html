@@ -1,0 +1,457 @@
+<title>Little Cayman species detection — evaluation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    color-scheme: light;
+    --bg:#f4f4f2; --surface:#fcfcfb; --surface-2:#efefec; --border:#e0e0db;
+    --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#8a897f;
+    --blue:#2a78d6; --blue-soft:#9ec5f4; --orange:#eb6834; --orange-soft:#f6c3ab;
+    --aqua:#1baf7a; --red:#e34948; --green:#008300; --amber:#eda100;
+    --seq0:#eef4fc; --grid:#e6e6e1;
+  }
+  @media (prefers-color-scheme: dark){:root:where(:not([data-theme="light"])){
+    color-scheme: dark;
+    --bg:#131312; --surface:#1a1a19; --surface-2:#232321; --border:#33332f;
+    --ink:#ffffff; --ink-2:#c3c2b7; --ink-3:#8f8e83;
+    --blue:#3987e5; --blue-soft:#1c5cab; --orange:#d95926; --orange-soft:#7a3419;
+    --aqua:#199e70; --red:#e66767; --green:#2e9e2e; --amber:#c98500;
+    --seq0:#17233a; --grid:#2a2a27;
+  }}
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --bg:#131312; --surface:#1a1a19; --surface-2:#232321; --border:#33332f;
+    --ink:#ffffff; --ink-2:#c3c2b7; --ink-3:#8f8e83;
+    --blue:#3987e5; --blue-soft:#1c5cab; --orange:#d95926; --orange-soft:#7a3419;
+    --aqua:#199e70; --red:#e66767; --green:#2e9e2e; --amber:#c98500;
+    --seq0:#17233a; --grid:#2a2a27;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:32px 20px 80px}
+  h1{font-size:26px;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+  h2{font-size:18px;margin:40px 0 14px;letter-spacing:-.01em}
+  .sub{color:var(--ink-2);font-size:14px;margin:0 0 4px}
+  .meta{color:var(--ink-3);font-size:12.5px;margin:2px 0 0}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:6px}
+  .tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+  .tile .lab{font-size:12px;color:var(--ink-2);display:flex;align-items:center;gap:6px;min-height:32px}
+  .tile .val{font-size:30px;font-weight:650;letter-spacing:-.02em;margin-top:4px}
+  .tile .val small{font-size:14px;font-weight:500;color:var(--ink-3)}
+  .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
+  th{color:var(--ink-2);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .barcell{position:relative;min-width:96px}
+  .bar{height:16px;border-radius:3px 5px 5px 3px;display:inline-block;vertical-align:middle}
+  .barnum{font-variant-numeric:tabular-nums;color:var(--ink-2);font-size:12.5px;margin-left:6px}
+  .flag{background:color-mix(in srgb,var(--red) 14%,transparent)}
+  .scroll{overflow-x:auto}
+  .cm{border-collapse:separate;border-spacing:2px;font-size:12px}
+  .cm td,.cm th{border:none;padding:0;white-space:nowrap}
+  .cm .cell{width:38px;height:30px;border-radius:5px;text-align:center;line-height:30px;
+    font-variant-numeric:tabular-nums;color:var(--ink)}
+  .cm .rh{text-align:right;padding-right:8px;color:var(--ink-2);font-size:12px}
+  .cm .ch{color:var(--ink-2);font-size:11px;height:80px;vertical-align:bottom;text-align:center}
+  .cm .ch span{writing-mode:vertical-rl;transform:rotate(180deg);display:inline-block}
+  .diag{outline:2px solid var(--green);outline-offset:-2px}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0 0;font-size:12.5px;color:var(--ink-2)}
+  .legend .k{display:flex;align-items:center;gap:6px}
+  ul.notes{margin:8px 0 0;padding-left:18px;color:var(--ink-2);font-size:13.5px}
+  ul.notes li{margin:5px 0}
+  .eq{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:14px}
+  .eq .b{background:var(--surface-2);border:1px solid var(--border);border-radius:9px;padding:8px 12px;text-align:center}
+  .eq .b b{display:block;font-size:22px;font-weight:650;letter-spacing:-.02em}
+  .eq .b span{font-size:11.5px;color:var(--ink-2)}
+  .eq .op{font-size:20px;color:var(--ink-3)}
+  .pill{font-size:11px;padding:1px 7px;border-radius:20px;border:1px solid var(--border);color:var(--ink-2)}
+</style>
+<div class="wrap">
+  <h1>Little Cayman species detection — evaluation</h1>
+  <p class="sub">BioCLIP species ID benchmarked against fishsense-lite human labels, on rectified-from-ORF REEF imagery.</p>
+  <p class="meta" id="meta"></p>
+
+  <h2>Headline — four conditions</h2>
+  <p class="sub" style="margin-bottom:10px">Two scopes (classifier on ground-truth crops vs. the full SAM3→classify pipeline) × two label-spaces (the 13-species site prior vs. a 69-species open-set). Metric is top-1 accuracy over the <b id="nfish"></b> labeled fish.</p>
+  <div class="tiles" id="tiles"></div>
+
+  <h2>Top-1 vs. top-5, by condition</h2>
+  <div class="card">
+    <div id="bars"></div>
+    <div class="legend">
+      <div class="k"><span class="bar" style="width:22px;background:var(--blue)"></span> top-1</div>
+      <div class="k"><span class="bar" style="width:22px;background:var(--blue-soft)"></span> top-5</div>
+    </div>
+  </div>
+
+  <h2>Where the full pipeline loses accuracy</h2>
+  <p class="sub">End-to-end accuracy is the product of two independent stages. Detection is the bigger bottleneck — SAM3 never finds ~1 in 5 labeled fish; the fish it does find are classified almost as well as clean ground-truth crops.</p>
+  <div class="card"><div class="eq" id="decomp"></div></div>
+
+  <h2>Per-species — every stage (13-species prior)</h2>
+  <p class="sub">Sorted by sample count. Bars: classifier on GT crop · SAM3 detection recall · end-to-end. Black Grouper collapses at every stage.</p>
+  <div class="card scroll"><table id="pertab"></table></div>
+
+  <h2>Confusion — classifier-only, 13-species prior</h2>
+  <p class="sub">Rows = true species, columns = predicted. Green outline = correct (diagonal). The errors are taxonomically coherent: groupers↔groupers, parrotfish↔parrotfish, dark-bodied fish confused with each other.</p>
+  <div class="card scroll"><div id="cm"></div></div>
+
+  <h2>Caveats</h2>
+  <ul class="notes" id="caveats"></ul>
+</div>
+<script>
+const DATA = {
+  "summary": {
+    "n": 351,
+    "det_recall": 0.7806267806267806,
+    "det_matched": 274,
+    "conditions": [
+      {
+        "key": "clf13",
+        "scope": "Classifier-only",
+        "space": "13-species prior",
+        "top1": 0.7749287749287749,
+        "top5": 0.9259259259259259
+      },
+      {
+        "key": "clf69",
+        "scope": "Classifier-only",
+        "space": "69-species open-set",
+        "top1": 0.7236467236467237,
+        "top5": 0.8575498575498576
+      },
+      {
+        "key": "fp13",
+        "scope": "Full pipeline",
+        "space": "13-species prior",
+        "top1": 0.5669515669515669,
+        "top5": 0.6951566951566952,
+        "acc_matched": 0.7262773722627737
+      },
+      {
+        "key": "fp69",
+        "scope": "Full pipeline",
+        "space": "69-species open-set",
+        "top1": 0.5270655270655271,
+        "top5": 0.6381766381766382,
+        "acc_matched": 0.6751824817518248
+      }
+    ]
+  },
+  "per_species": [
+    {
+      "sci": "Lachnolaimus maximus",
+      "common": "Hogfish",
+      "n": 155,
+      "clf13": 0.864516129032258,
+      "clf69": 0.7870967741935484,
+      "det_recall": 0.7483870967741936,
+      "fp13": 0.6451612903225806,
+      "fp69": 0.5806451612903226
+    },
+    {
+      "sci": "Sparisoma viride",
+      "common": "Stoplight Parrotfish",
+      "n": 84,
+      "clf13": 0.7380952380952381,
+      "clf69": 0.7261904761904762,
+      "det_recall": 0.8095238095238095,
+      "fp13": 0.5952380952380952,
+      "fp69": 0.5833333333333334
+    },
+    {
+      "sci": "Scarus coeruleus",
+      "common": "Blue Parrotfish",
+      "n": 26,
+      "clf13": 0.7692307692307693,
+      "clf69": 0.7307692307692307,
+      "det_recall": 0.9615384615384616,
+      "fp13": 0.5,
+      "fp69": 0.5
+    },
+    {
+      "sci": "Mycteroperca bonaci",
+      "common": "Black Grouper",
+      "n": 25,
+      "clf13": 0.12,
+      "clf69": 0.08,
+      "det_recall": 0.52,
+      "fp13": 0.0,
+      "fp69": 0.0
+    },
+    {
+      "sci": "Epinephelus striatus",
+      "common": "Nassau Grouper",
+      "n": 25,
+      "clf13": 0.96,
+      "clf69": 0.92,
+      "det_recall": 0.8,
+      "fp13": 0.6,
+      "fp69": 0.52
+    },
+    {
+      "sci": "Scarus guacamaia",
+      "common": "Rainbow Parrotfish",
+      "n": 12,
+      "clf13": 0.8333333333333334,
+      "clf69": 0.6666666666666666,
+      "det_recall": 1.0,
+      "fp13": 0.5833333333333334,
+      "fp69": 0.5833333333333334
+    },
+    {
+      "sci": "Scarus coelestinus",
+      "common": "Midnight Parrotfish",
+      "n": 10,
+      "clf13": 1.0,
+      "clf69": 1.0,
+      "det_recall": 1.0,
+      "fp13": 1.0,
+      "fp69": 1.0
+    },
+    {
+      "sci": "Ocyurus chrysurus",
+      "common": "Yellowtail Snapper",
+      "n": 10,
+      "clf13": 0.5,
+      "clf69": 0.5,
+      "det_recall": 0.8,
+      "fp13": 0.2,
+      "fp69": 0.1
+    },
+    {
+      "sci": "Epinephelus itajara",
+      "common": "Goliath Grouper",
+      "n": 3,
+      "clf13": 1.0,
+      "clf69": 1.0,
+      "det_recall": 0.6666666666666666,
+      "fp13": 0.6666666666666666,
+      "fp69": 0.6666666666666666
+    },
+    {
+      "sci": "Lutjanus analis",
+      "common": "Mutton Snapper",
+      "n": 1,
+      "clf13": 1.0,
+      "clf69": 1.0,
+      "det_recall": 0.0,
+      "fp13": 0.0,
+      "fp69": 0.0
+    }
+  ],
+  "labels": [
+    "Lachnolaimus maximus",
+    "Sparisoma viride",
+    "Scarus coeruleus",
+    "Mycteroperca bonaci",
+    "Epinephelus striatus",
+    "Scarus guacamaia",
+    "Scarus coelestinus",
+    "Ocyurus chrysurus",
+    "Epinephelus itajara",
+    "Lutjanus analis"
+  ],
+  "common": {
+    "Lachnolaimus maximus": "Hogfish",
+    "Sparisoma viride": "Stoplight Parrotfish",
+    "Mycteroperca bonaci": "Black Grouper",
+    "Epinephelus striatus": "Nassau Grouper",
+    "Scarus coeruleus": "Blue Parrotfish",
+    "Scarus guacamaia": "Rainbow Parrotfish",
+    "Ocyurus chrysurus": "Yellowtail Snapper",
+    "Scarus coelestinus": "Midnight Parrotfish",
+    "Epinephelus itajara": "Goliath Grouper",
+    "Lutjanus analis": "Mutton Snapper",
+    "Epinephelus morio": "Red Grouper",
+    "Lutjanus griseus": "Grey Snapper",
+    "Mycteroperca interstitialis": "Yellowmouth Grouper"
+  },
+  "confusion_clf13": {
+    "Lachnolaimus maximus": {
+      "Lachnolaimus maximus": 134,
+      "Epinephelus striatus": 1,
+      "Epinephelus morio": 14,
+      "Lutjanus analis": 4,
+      "Epinephelus itajara": 1,
+      "Mycteroperca interstitialis": 1
+    },
+    "Sparisoma viride": {
+      "Sparisoma viride": 62,
+      "Scarus coelestinus": 17,
+      "Epinephelus itajara": 2,
+      "Lutjanus analis": 1,
+      "Epinephelus morio": 1,
+      "Scarus coeruleus": 1
+    },
+    "Scarus coeruleus": {
+      "Scarus coeruleus": 20,
+      "Scarus coelestinus": 5,
+      "Sparisoma viride": 1
+    },
+    "Mycteroperca bonaci": {
+      "Epinephelus itajara": 8,
+      "Epinephelus morio": 4,
+      "Lachnolaimus maximus": 1,
+      "Scarus coelestinus": 6,
+      "Mycteroperca bonaci": 3,
+      "Epinephelus striatus": 3
+    },
+    "Epinephelus striatus": {
+      "Epinephelus striatus": 24,
+      "Lachnolaimus maximus": 1
+    },
+    "Scarus guacamaia": {
+      "Scarus guacamaia": 10,
+      "Epinephelus morio": 1,
+      "Scarus coelestinus": 1
+    },
+    "Scarus coelestinus": {
+      "Scarus coelestinus": 10
+    },
+    "Ocyurus chrysurus": {
+      "Ocyurus chrysurus": 5,
+      "Epinephelus striatus": 1,
+      "Mycteroperca interstitialis": 4
+    },
+    "Epinephelus itajara": {
+      "Epinephelus itajara": 3
+    },
+    "Lutjanus analis": {
+      "Lutjanus analis": 1
+    }
+  },
+  "lc_order": [
+    "Lachnolaimus maximus",
+    "Sparisoma viride",
+    "Scarus coeruleus",
+    "Mycteroperca bonaci",
+    "Epinephelus striatus",
+    "Scarus guacamaia",
+    "Scarus coelestinus",
+    "Ocyurus chrysurus",
+    "Epinephelus itajara",
+    "Lutjanus analis"
+  ]
+};
+const pct = x => (x*100).toFixed(1);
+const el = (t,c,txt)=>{const e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;};
+const S = DATA.summary;
+
+document.getElementById('meta').textContent =
+  `${S.n} labeled fish · 10 of 13 site species represented · 65 additional fish excluded (no head/tail point or ambiguous multi-fish) · BioCLIP-2.5 ViT-H/14`;
+document.getElementById('nfish').textContent = S.n;
+
+// tiles
+const condColor = k => k.startsWith('clf') ? 'var(--blue)' : 'var(--orange)';
+const tiles = document.getElementById('tiles');
+S.conditions.forEach(c=>{
+  const t = el('div','tile');
+  const lab = el('div','lab');
+  const d = el('span','dot'); d.style.background=condColor(c.key); lab.append(d, el('span',null,`${c.scope} · ${c.space}`));
+  const v = el('div','val'); v.innerHTML = `${pct(c.top1)}<small>%</small>`;
+  t.append(lab, v);
+  const sub = el('div','meta', c.key.startsWith('fp') ? `end-to-end · ${pct(c.acc_matched)}% on detected` : `top-5 ${pct(c.top5)}%`);
+  t.append(sub);
+  tiles.append(t);
+});
+// detection recall tile
+const rt = el('div','tile');
+const rl = el('div','lab'); const rd=el('span','dot'); rd.style.background='var(--amber)'; rl.append(rd, el('span',null,'SAM3 detection recall'));
+rt.append(rl, (()=>{const v=el('div','val');v.innerHTML=`${pct(S.det_recall)}<small>%</small>`;return v})(), el('div','meta',`${S.det_matched}/${S.n} labeled fish found`));
+tiles.append(rt);
+
+// bars
+const bars = document.getElementById('bars');
+const maxw = 560;
+S.conditions.forEach(c=>{
+  const row = el('div'); row.style.margin='10px 0';
+  row.append((()=>{const l=el('div');l.style.cssText='font-size:12.5px;color:var(--ink-2);margin-bottom:3px';l.textContent=`${c.scope} · ${c.space}`;return l})());
+  const track = el('div'); track.style.cssText='display:flex;align-items:center;gap:0';
+  const b1=el('span','bar'); b1.style.cssText=`width:${c.top1*maxw}px;background:var(--blue)`;
+  const n1=el('span','barnum',`${pct(c.top1)}%`);
+  track.append(b1,n1); row.append(track);
+  const track2=el('div'); track2.style.cssText='display:flex;align-items:center;gap:0;margin-top:3px';
+  const b2=el('span','bar'); b2.style.cssText=`width:${c.top5*maxw}px;background:var(--blue-soft)`;
+  const n2=el('span','barnum',`${pct(c.top5)}%`);
+  track2.append(b2,n2); row.append(track2);
+  bars.append(row);
+});
+
+// decomposition
+const fp = S.conditions.find(c=>c.key==='fp13');
+const dc = document.getElementById('decomp');
+const mkb=(v,lab)=>{const b=el('div','b');b.innerHTML=`<b>${v}</b><span>${lab}</span>`;return b};
+dc.append(
+  mkb(pct(S.det_recall)+'%','SAM3 finds the fish'),
+  el('span','op','×'),
+  mkb(pct(fp.acc_matched)+'%','classified right, if found'),
+  el('span','op','='),
+  (()=>{const b=mkb(pct(fp.top1)+'%','end-to-end');b.style.borderColor='var(--orange)';b.querySelector('b').style.color='var(--orange)';return b})()
+);
+
+// per-species table
+const bcolor = (v,soft)=> v<0.34?'var(--red)': v<0.67?'var(--amber)': (soft||'var(--aqua)');
+function barCell(v){
+  const td=el('td','barcell');
+  const b=el('span','bar'); b.style.cssText=`width:${Math.max(2,v*84)}px;background:${bcolor(v)}`;
+  td.append(b, el('span','barnum',pct(v)+'%'));
+  return td;
+}
+const pt=document.getElementById('pertab');
+pt.innerHTML='<thead><tr><th>Species</th><th class="num">n</th><th>Classifier (GT crop)</th><th>SAM3 recall</th><th>End-to-end</th></tr></thead>';
+const tb=el('tbody');
+DATA.per_species.forEach(s=>{
+  const tr=el('tr'); if(s.sci==='Mycteroperca bonaci') tr.className='flag';
+  const name=el('td'); name.innerHTML=`<b>${s.common}</b> <span class="pill">${s.sci.split(' ')[0][0]}. ${s.sci.split(' ')[1]}</span>`;
+  tr.append(name);
+  tr.append((()=>{const t=el('td','num');t.textContent=s.n;return t})());
+  tr.append(barCell(s.clf13), barCell(s.det_recall), barCell(s.fp13));
+  tb.append(tr);
+});
+pt.append(tb);
+
+// confusion matrix
+const cols = DATA.lc_order.concat(['Epinephelus morio','Mycteroperca interstitialis'].filter(x=>{
+  return DATA.per_species && Object.values(DATA.confusion_clf13).some(r=>r[x]);
+}));
+// column set = union of predicted labels
+const colset=new Set();
+Object.values(DATA.confusion_clf13).forEach(r=>Object.keys(r).forEach(k=>colset.add(k)));
+DATA.lc_order.forEach(k=>colset.add(k));
+const COLS = DATA.lc_order.concat([...colset].filter(c=>!DATA.lc_order.includes(c)));
+let maxc=0; Object.values(DATA.confusion_clf13).forEach(r=>Object.values(r).forEach(v=>maxc=Math.max(maxc,v)));
+function seq(v){ if(v===0) return 'var(--surface)'; const t=Math.sqrt(v/maxc);
+  return `color-mix(in srgb, var(--blue) ${Math.round(18+t*72)}%, var(--seq0))`; }
+const cm=document.getElementById('cm');
+const tbl=el('table','cm');
+const thead=el('thead'); const hr=el('tr'); hr.append(el('th'));
+COLS.forEach(c=>{const th=el('th','ch');const s=el('span',null,DATA.common[c]||c);th.append(s);hr.append(th)});
+thead.append(hr); tbl.append(thead);
+const body=el('tbody');
+DATA.lc_order.forEach(gt=>{
+  const tr=el('tr'); tr.append((()=>{const th=el('th','rh');th.textContent=DATA.common[gt]||gt;return th})());
+  const row=DATA.confusion_clf13[gt]||{};
+  COLS.forEach(pred=>{
+    const v=row[pred]||0; const td=el('td');
+    const c=el('div','cell'+(pred===gt?' diag':'')); c.style.background=seq(v); c.textContent=v||'';
+    if(v && v/maxc<0.28) c.style.color='var(--ink-2)';
+    td.append(c); tr.append(td);
+  });
+  body.append(tr);
+});
+tbl.append(body); cm.append(tbl);
+
+// caveats
+const cav=[
+ 'The open-set (69 species) draws its 56 distractors from the other top25 regions, which are mostly Indo-Pacific. That is a weak open-set — a Caribbean-congener distractor set (other groupers, snappers, wrasses) would be a harder, fairer test of open-world behaviour.',
+ 'Small sample sizes for the tail species: Goliath Grouper n=3, Mutton Snapper n=1. Their per-species rates are indicative only. Three site species (Red Grouper, Grey Snapper, Yellowmouth Grouper) have zero labels and are absent from the test set.',
+ '65 labeled fish were excluded: 64 have a completed head/tail label with null coordinates (skipped by the annotator) and 9 are multi-fish frames without a laser point to disambiguate which fish carries the species label.',
+ 'Rectification reproduces fishsense-core 2.4.1 exactly (rawpy decode → auto-gamma → CLAHE → cv2.undistort); label coordinates map to the rectified frame by identity. Alignment was visually spot-checked across species before scoring.',
+ 'End-to-end counts an undetected fish as wrong. "Classified right, if found" (72.6% / 67.5%) isolates the classifier on SAM3 crops — within ~5 pts of the ground-truth-crop number, so SAM3 box quality is not the main loss; detection recall is.',
+];
+const cl=document.getElementById('caveats'); cav.forEach(t=>cl.append(el('li',null,t)));
+</script>

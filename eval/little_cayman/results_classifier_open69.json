@@ -1,0 +1,7082 @@
+{
+  "condition": "open69",
+  "n": 351,
+  "top1": 254,
+  "top5": 301,
+  "top1_acc": 0.7236467236467237,
+  "top5_acc": 0.8575498575498576,
+  "per_species": {
+    "Lachnolaimus maximus": {
+      "correct": 122,
+      "n": 155,
+      "acc": 0.7870967741935484
+    },
+    "Sparisoma viride": {
+      "correct": 61,
+      "n": 84,
+      "acc": 0.7261904761904762
+    },
+    "Scarus guacamaia": {
+      "correct": 8,
+      "n": 12,
+      "acc": 0.6666666666666666
+    },
+    "Scarus coeruleus": {
+      "correct": 19,
+      "n": 26,
+      "acc": 0.7307692307692307
+    },
+    "Mycteroperca bonaci": {
+      "correct": 2,
+      "n": 25,
+      "acc": 0.08
+    },
+    "Scarus coelestinus": {
+      "correct": 10,
+      "n": 10,
+      "acc": 1.0
+    },
+    "Epinephelus striatus": {
+      "correct": 23,
+      "n": 25,
+      "acc": 0.92
+    },
+    "Ocyurus chrysurus": {
+      "correct": 5,
+      "n": 10,
+      "acc": 0.5
+    },
+    "Epinephelus itajara": {
+      "correct": 3,
+      "n": 3,
+      "acc": 1.0
+    },
+    "Lutjanus analis": {
+      "correct": 1,
+      "n": 1,
+      "acc": 1.0
+    }
+  },
+  "preds": [
+    {
+      "image_id": 101293,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999648332595825,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus griseus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9999648332595825,
+        2.9908873329986818e-05,
+        3.3601143059058813e-06,
+        9.721472906676354e-07,
+        6.894398438817007e-07
+      ]
+    },
+    {
+      "image_id": 101294,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999397993087769,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.9999397993087769,
+        4.952525341650471e-05,
+        9.387666978000198e-06,
+        7.361772986769211e-07,
+        3.9115835193115345e-07
+      ]
+    },
+    {
+      "image_id": 101295,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999886751174927,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9999886751174927,
+        5.511377821676433e-06,
+        4.8470301408087835e-06,
+        5.195580570216407e-07,
+        1.9242818893872027e-07
+      ]
+    },
+    {
+      "image_id": 101297,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9609938859939575,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Mycteroperca interstitialis",
+        "Pristipomoides multidens",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.9609938859939575,
+        0.018992798402905464,
+        0.014326510950922966,
+        0.0023708154913038015,
+        0.0012730645248666406
+      ]
+    },
+    {
+      "image_id": 101300,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.6297221183776855,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Ctenochaetus striatus",
+        "Epinephelus sexfasciatus",
+        "Epinephelus itajara"
+      ],
+      "top5_probs": [
+        0.6297221183776855,
+        0.3364531993865967,
+        0.013166042976081371,
+        0.007271783892065287,
+        0.005996708292514086
+      ]
+    },
+    {
+      "image_id": 101301,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9812288880348206,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus coioides",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.9812288880348206,
+        0.00687599228695035,
+        0.005417305044829845,
+        0.003639976726844907,
+        0.0007790566305629909
+      ]
+    },
+    {
+      "image_id": 101302,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9980504512786865,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Epinephelus striatus",
+        "Lutjanus malabaricus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9980504512786865,
+        0.0012782441917806864,
+        0.00022258695389609784,
+        9.3126691353973e-05,
+        7.237458339659497e-05
+      ]
+    },
+    {
+      "image_id": 101303,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.7542409300804138,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Epinephelus sexfasciatus",
+        "Lachnolaimus maximus"
+      ],
+      "top5_probs": [
+        0.7542409300804138,
+        0.10661601275205612,
+        0.05438915267586708,
+        0.04176369681954384,
+        0.02301356941461563
+      ]
+    },
+    {
+      "image_id": 101304,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.8234235644340515,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Epinephelus coioides",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.8234235644340515,
+        0.11678586155176163,
+        0.030666660517454147,
+        0.008902983739972115,
+        0.00848162081092596
+      ]
+    },
+    {
+      "image_id": 101305,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus morio",
+      "conf": 0.5087424516677856,
+      "top5": [
+        "Epinephelus morio",
+        "Epinephelus sexfasciatus",
+        "Epinephelus itajara",
+        "Epinephelus striatus",
+        "Lachnolaimus maximus"
+      ],
+      "top5_probs": [
+        0.5087424516677856,
+        0.21149131655693054,
+        0.08440379798412323,
+        0.0628308653831482,
+        0.06078821420669556
+      ]
+    },
+    {
+      "image_id": 101306,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9832951426506042,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Epinephelus striatus",
+        "Epinephelus itajara",
+        "Lutjanus malabaricus"
+      ],
+      "top5_probs": [
+        0.9832951426506042,
+        0.004674864467233419,
+        0.003938463516533375,
+        0.003667076351121068,
+        0.0019588801078498363
+      ]
+    },
+    {
+      "image_id": 101307,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9737234711647034,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Lutjanus malabaricus",
+        "Epinephelus itajara",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.9737234711647034,
+        0.013215159997344017,
+        0.006586022675037384,
+        0.002258235588669777,
+        0.0013624249259009957
+      ]
+    },
+    {
+      "image_id": 101308,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.5931711196899414,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Ctenochaetus striatus",
+        "Epinephelus itajara",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.5931711196899414,
+        0.2969992160797119,
+        0.04295901209115982,
+        0.029769552871584892,
+        0.010994385927915573
+      ]
+    },
+    {
+      "image_id": 101309,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.7331377267837524,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Ctenochaetus striatus",
+        "Lutjanus malabaricus",
+        "Epinephelus itajara"
+      ],
+      "top5_probs": [
+        0.7331377267837524,
+        0.24262700974941254,
+        0.009430989623069763,
+        0.005962954368442297,
+        0.00509466789662838
+      ]
+    },
+    {
+      "image_id": 101310,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9776099324226379,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Lutjanus malabaricus",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9776099324226379,
+        0.009701861068606377,
+        0.008269117213785648,
+        0.001290248823352158,
+        0.00107065390329808
+      ]
+    },
+    {
+      "image_id": 101337,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9996715784072876,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9996715784072876,
+        0.0003131569246761501,
+        7.394557087536668e-06,
+        4.39613040725817e-06,
+        1.997397930608713e-06
+      ]
+    },
+    {
+      "image_id": 101338,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9998373985290527,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9998373985290527,
+        0.0001505552645539865,
+        8.18694843474077e-06,
+        9.222226822203083e-07,
+        8.398886848226539e-07
+      ]
+    },
+    {
+      "image_id": 101357,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9871647357940674,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Epinephelus itajara",
+        "Epinephelus sexfasciatus",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.9871647357940674,
+        0.006397577468305826,
+        0.002713507041335106,
+        0.0009945641504600644,
+        0.0007605658029206097
+      ]
+    },
+    {
+      "image_id": 101358,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.98970627784729,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.98970627784729,
+        0.009011885151267052,
+        0.00034229905577376485,
+        0.0002966445463243872,
+        0.0002144873869838193
+      ]
+    },
+    {
+      "image_id": 101359,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9376558661460876,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Epinephelus sexfasciatus",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9376558661460876,
+        0.03563353419303894,
+        0.007092385087162256,
+        0.004214316140860319,
+        0.003321472555398941
+      ]
+    },
+    {
+      "image_id": 101360,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9997439980506897,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.9997439980506897,
+        0.00023913315089885145,
+        9.199971827911213e-06,
+        3.845417722914135e-06,
+        1.1451204500190215e-06
+      ]
+    },
+    {
+      "image_id": 101361,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9962291121482849,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Epinephelus coioides",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.9962291121482849,
+        0.003665995318442583,
+        2.9557248126366176e-05,
+        1.847120984166395e-05,
+        1.0788802683237009e-05
+      ]
+    },
+    {
+      "image_id": 101362,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.999987006187439,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Ctenochaetus striatus",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.999987006187439,
+        5.0039743655361235e-06,
+        3.837748863588786e-06,
+        9.77438048721524e-07,
+        6.834142141087796e-07
+      ]
+    },
+    {
+      "image_id": 101363,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.994577169418335,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Epinephelus malabaricus",
+        "Epinephelus morio",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.994577169418335,
+        0.004772064741700888,
+        0.00013863464118912816,
+        0.00013377550931181759,
+        7.314985123230144e-05
+      ]
+    },
+    {
+      "image_id": 101364,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.41584548354148865,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Epinephelus coioides",
+        "Epinephelus sexfasciatus",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.41584548354148865,
+        0.1391882747411728,
+        0.12347731739282608,
+        0.10584039241075516,
+        0.06348700821399689
+      ]
+    },
+    {
+      "image_id": 101366,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999518394470215,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Ctenochaetus striatus",
+        "Stegastes nigricans",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9999518394470215,
+        3.470146475592628e-05,
+        5.4039815040596295e-06,
+        4.168059149378678e-06,
+        1.8340589349463698e-06
+      ]
+    },
+    {
+      "image_id": 101367,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9985259175300598,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9985259175300598,
+        0.0014670458622276783,
+        1.689968030404998e-06,
+        1.3382370980252745e-06,
+        1.2865185681221192e-06
+      ]
+    },
+    {
+      "image_id": 101368,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9981679916381836,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus fulvus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9981679916381836,
+        0.001819427590817213,
+        6.48486229692935e-06,
+        1.5164388287303154e-06,
+        1.376815021103539e-06
+      ]
+    },
+    {
+      "image_id": 101369,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9981074333190918,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Ctenochaetus striatus",
+        "Lutjanus analis",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.9981074333190918,
+        0.0018766602734103799,
+        6.859082986920839e-06,
+        3.5993612073070835e-06,
+        1.6325657270499505e-06
+      ]
+    },
+    {
+      "image_id": 101370,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9997114539146423,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Mycteroperca interstitialis",
+        "Lutjanus griseus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9997114539146423,
+        0.00028421770548447967,
+        1.155090444626694e-06,
+        8.854290172166657e-07,
+        7.358266884693876e-07
+      ]
+    },
+    {
+      "image_id": 101371,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9997575879096985,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9997575879096985,
+        0.00023876634077169,
+        1.4893797697368427e-06,
+        1.3167468750907574e-06,
+        4.4483138594841876e-07
+      ]
+    },
+    {
+      "image_id": 101372,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.957831084728241,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Stegastes nigricans",
+        "Lutjanus analis",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.957831084728241,
+        0.04205302521586418,
+        4.1605067963246256e-05,
+        2.0437671992112882e-05,
+        2.0350926206447184e-05
+      ]
+    },
+    {
+      "image_id": 101374,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9991106390953064,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.9991106390953064,
+        0.0008718874305486679,
+        6.582549758604728e-06,
+        5.348329978005495e-06,
+        2.368016794207506e-06
+      ]
+    },
+    {
+      "image_id": 101375,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9998334646224976,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.9998334646224976,
+        0.0001566584105603397,
+        3.834423750959104e-06,
+        2.0071397557330783e-06,
+        1.2077890687578474e-06
+      ]
+    },
+    {
+      "image_id": 101376,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.99972003698349,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.99972003698349,
+        0.00026393879670649767,
+        9.506930837233085e-06,
+        2.353094487261842e-06,
+        9.578200206306065e-07
+      ]
+    },
+    {
+      "image_id": 101395,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9977754950523376,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9977754950523376,
+        0.0017230126541107893,
+        0.0004180321702733636,
+        3.13862765324302e-05,
+        2.1752006432507187e-05
+      ]
+    },
+    {
+      "image_id": 101396,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9992402791976929,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus oviceps",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9992402791976929,
+        0.0005788910784758627,
+        0.0001325387420365587,
+        1.1767745490942616e-05,
+        1.1298425306449644e-05
+      ]
+    },
+    {
+      "image_id": 101397,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9968082308769226,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9968082308769226,
+        0.00211128662340343,
+        0.0009920118609443307,
+        3.728915544343181e-05,
+        2.1176081645535305e-05
+      ]
+    },
+    {
+      "image_id": 101398,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.999822199344635,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Lutjanus analis",
+        "Parupeneus multifasciatus",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.999822199344635,
+        0.0001430418051313609,
+        1.1214847290830221e-05,
+        5.444952876132447e-06,
+        3.7841032280994114e-06
+      ]
+    },
+    {
+      "image_id": 101399,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9985567927360535,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Lutjanus analis",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.9985567927360535,
+        0.0013627198059111834,
+        2.8938689865753986e-05,
+        1.8489312424208038e-05,
+        9.60629949986469e-06
+      ]
+    },
+    {
+      "image_id": 101400,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9946415424346924,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus oviceps",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.9946415424346924,
+        0.0026501230895519257,
+        0.0015996430302038789,
+        0.0009724632254801691,
+        5.751176649937406e-05
+      ]
+    },
+    {
+      "image_id": 101401,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9603990316390991,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus oviceps",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9603990316390991,
+        0.0252526868134737,
+        0.008218825794756413,
+        0.002264101291075349,
+        0.0018132012337446213
+      ]
+    },
+    {
+      "image_id": 101402,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9992266893386841,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Lutjanus analis",
+        "Scarus ghobban",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.9992266893386841,
+        0.0007632359047420323,
+        2.9407044621621026e-06,
+        2.244555616925936e-06,
+        2.0750273961311905e-06
+      ]
+    },
+    {
+      "image_id": 101403,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9970930814743042,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Halichoeres hortulanus",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.9970930814743042,
+        0.002814563224092126,
+        3.1607192795490846e-05,
+        2.4315098926308565e-05,
+        2.273256723128725e-05
+      ]
+    },
+    {
+      "image_id": 101405,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9432388544082642,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus oviceps",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9432388544082642,
+        0.03340129181742668,
+        0.010633140802383423,
+        0.009807075373828411,
+        0.001471665338613093
+      ]
+    },
+    {
+      "image_id": 101406,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.8801702857017517,
+      "top5": [
+        "Sparisoma viride",
+        "Halichoeres hortulanus",
+        "Scarus oviceps",
+        "Naso lituratus",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.8801702857017517,
+        0.05821807682514191,
+        0.03216186910867691,
+        0.017983799800276756,
+        0.005452809855341911
+      ]
+    },
+    {
+      "image_id": 101409,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9997333884239197,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus psittacus",
+        "Chlorurus sordidus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9997333884239197,
+        0.0002189628139603883,
+        2.0907280486426316e-05,
+        8.479752068524249e-06,
+        8.182693818525877e-06
+      ]
+    },
+    {
+      "image_id": 101410,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9993871450424194,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9993871450424194,
+        0.0005949737969785929,
+        8.999974852486048e-06,
+        2.8560632472363068e-06,
+        2.6125260319531662e-06
+      ]
+    },
+    {
+      "image_id": 101411,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9999054670333862,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9999054670333862,
+        8.963555592345074e-05,
+        1.8835700075214845e-06,
+        8.822324275570281e-07,
+        8.471765227113792e-07
+      ]
+    },
+    {
+      "image_id": 101412,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9998538494110107,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus psittacus",
+        "Scarus ghobban",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.9998538494110107,
+        0.00013574234617408365,
+        5.724844413634855e-06,
+        1.8103854699802469e-06,
+        1.2193594329801272e-06
+      ]
+    },
+    {
+      "image_id": 101414,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9995183944702148,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9995183944702148,
+        0.00045622128527611494,
+        1.961239286174532e-05,
+        3.109862063865876e-06,
+        1.3747808225161862e-06
+      ]
+    },
+    {
+      "image_id": 101415,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9995393753051758,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9995393753051758,
+        0.0003993122954852879,
+        4.377128789201379e-05,
+        8.79799608810572e-06,
+        4.7606508815079e-06
+      ]
+    },
+    {
+      "image_id": 101416,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9995012283325195,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9995012283325195,
+        0.00041691737715154886,
+        5.590088403550908e-05,
+        1.3436801054922398e-05,
+        9.987058547267225e-06
+      ]
+    },
+    {
+      "image_id": 101417,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9993667006492615,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.9993667006492615,
+        0.0005862182006239891,
+        3.750570976990275e-05,
+        5.217568286752794e-06,
+        1.9630888346000575e-06
+      ]
+    },
+    {
+      "image_id": 101418,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9995036125183105,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9995036125183105,
+        0.0004575897182803601,
+        2.9136463126633316e-05,
+        6.495893558167154e-06,
+        1.9386711755942088e-06
+      ]
+    },
+    {
+      "image_id": 101419,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9997656941413879,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9997656941413879,
+        0.00020436181512195617,
+        1.4188321074470878e-05,
+        7.764273505017627e-06,
+        5.471254098665668e-06
+      ]
+    },
+    {
+      "image_id": 101421,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9994146823883057,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.9994146823883057,
+        0.0005181703600101173,
+        5.033324487158097e-05,
+        6.394102911144728e-06,
+        4.125855411984958e-06
+      ]
+    },
+    {
+      "image_id": 101423,
+      "gt": "Scarus guacamaia",
+      "pred": "Scarus guacamaia",
+      "conf": 0.9982923865318298,
+      "top5": [
+        "Scarus guacamaia",
+        "Sparisoma viride",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus coeruleus"
+      ],
+      "top5_probs": [
+        0.9982923865318298,
+        0.0014536298112943769,
+        0.00015706030535511672,
+        4.973118120688014e-05,
+        4.3857828131876886e-05
+      ]
+    },
+    {
+      "image_id": 101425,
+      "gt": "Scarus guacamaia",
+      "pred": "Scarus guacamaia",
+      "conf": 0.9221967458724976,
+      "top5": [
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Sparisoma viride",
+        "Scarus oviceps",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9221967458724976,
+        0.07478122413158417,
+        0.0010035265004262328,
+        0.0008349763229489326,
+        0.000614016957115382
+      ]
+    },
+    {
+      "image_id": 101434,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.998314380645752,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.998314380645752,
+        0.0016642427071928978,
+        1.2830416380893439e-05,
+        4.008067662653048e-06,
+        2.8003355510008987e-06
+      ]
+    },
+    {
+      "image_id": 101436,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9992503523826599,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9992503523826599,
+        0.0007315849652513862,
+        1.0756617484730668e-05,
+        4.038497081637615e-06,
+        2.0210470665915636e-06
+      ]
+    },
+    {
+      "image_id": 101437,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9985690116882324,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.9985690116882324,
+        0.0013170812744647264,
+        9.21376995393075e-05,
+        5.514481927093584e-06,
+        4.723412530438509e-06
+      ]
+    },
+    {
+      "image_id": 101438,
+      "gt": "Scarus guacamaia",
+      "pred": "Scarus guacamaia",
+      "conf": 0.9918455481529236,
+      "top5": [
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus",
+        "Scarus coeruleus"
+      ],
+      "top5_probs": [
+        0.9918455481529236,
+        0.003896748647093773,
+        0.0023391006980091333,
+        0.0016422383487224579,
+        0.0001982670510187745
+      ]
+    },
+    {
+      "image_id": 101439,
+      "gt": "Scarus guacamaia",
+      "pred": "Scarus guacamaia",
+      "conf": 0.8611623048782349,
+      "top5": [
+        "Scarus guacamaia",
+        "Scarus psittacus",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.8611623048782349,
+        0.060193371027708054,
+        0.0596960112452507,
+        0.018396496772766113,
+        0.00024492907687090337
+      ]
+    },
+    {
+      "image_id": 101440,
+      "gt": "Scarus guacamaia",
+      "pred": "Scarus guacamaia",
+      "conf": 0.47125741839408875,
+      "top5": [
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Chlorurus sordidus",
+        "Scarus psittacus",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.47125741839408875,
+        0.2106749713420868,
+        0.18859295547008514,
+        0.11370135098695755,
+        0.012073694728314877
+      ]
+    },
+    {
+      "image_id": 101441,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.8799498081207275,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.8799498081207275,
+        0.11531998217105865,
+        0.002537149703130126,
+        0.0015871929936110973,
+        0.00026847663684748113
+      ]
+    },
+    {
+      "image_id": 101442,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.8789641261100769,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus guacamaia"
+      ],
+      "top5_probs": [
+        0.8789641261100769,
+        0.10863155126571655,
+        0.006550240330398083,
+        0.0036195258144289255,
+        0.001421807799488306
+      ]
+    },
+    {
+      "image_id": 101443,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.5018933415412903,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus ghobban",
+        "Scarus psittacus",
+        "Scarus coelestinus",
+        "Scarus guacamaia"
+      ],
+      "top5_probs": [
+        0.5018933415412903,
+        0.4902931749820709,
+        0.003140369663015008,
+        0.0024681598879396915,
+        0.0015920933801680803
+      ]
+    },
+    {
+      "image_id": 101444,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.9672091603279114,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus guacamaia",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9672091603279114,
+        0.027596114203333855,
+        0.0033882465213537216,
+        0.0009039369178935885,
+        0.0006110746180638671
+      ]
+    },
+    {
+      "image_id": 101445,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.9380573630332947,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus guacamaia",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9380573630332947,
+        0.03807293251156807,
+        0.019754691049456596,
+        0.002845954615622759,
+        0.0008772775763645768
+      ]
+    },
+    {
+      "image_id": 101446,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.9301810264587402,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus guacamaia",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9301810264587402,
+        0.061277713626623154,
+        0.005899314768612385,
+        0.001493903691880405,
+        0.0010006435913965106
+      ]
+    },
+    {
+      "image_id": 101448,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.7510347962379456,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus guacamaia"
+      ],
+      "top5_probs": [
+        0.7510347962379456,
+        0.229941263794899,
+        0.008284506388008595,
+        0.005036955699324608,
+        0.0026503936387598515
+      ]
+    },
+    {
+      "image_id": 102551,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.997597873210907,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.997597873210907,
+        0.0023138958495110273,
+        7.960265793371946e-05,
+        3.6380145047587575e-06,
+        1.6917952052608598e-06
+      ]
+    },
+    {
+      "image_id": 102552,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9994627833366394,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9994627833366394,
+        0.0004446771345101297,
+        8.911457553040236e-05,
+        6.831627956671582e-07,
+        5.999821723889909e-07
+      ]
+    },
+    {
+      "image_id": 102554,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9998431205749512,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus oviceps",
+        "Scarus coeruleus"
+      ],
+      "top5_probs": [
+        0.9998431205749512,
+        0.00011821027146652341,
+        3.686202035169117e-05,
+        1.0342854466216522e-06,
+        2.2574404567876627e-07
+      ]
+    },
+    {
+      "image_id": 102558,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9973352551460266,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Mycteroperca interstitialis",
+        "Lutjanus malabaricus",
+        "Stegastes nigricans",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9973352551460266,
+        0.0016859929310157895,
+        0.0007889589760452509,
+        5.7646622735774145e-05,
+        4.413433271110989e-05
+      ]
+    },
+    {
+      "image_id": 102562,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9961891770362854,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Mycteroperca interstitialis",
+        "Epinephelus morio",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9961891770362854,
+        0.0036795218475162983,
+        0.00011929850006708875,
+        3.991122412116965e-06,
+        1.8203534182248404e-06
+      ]
+    },
+    {
+      "image_id": 102565,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999040365219116,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Mycteroperca interstitialis",
+        "Lutjanus griseus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9999040365219116,
+        7.923103112261742e-05,
+        1.4293507774709724e-05,
+        1.0568918469289201e-06,
+        2.476760982972337e-07
+      ]
+    },
+    {
+      "image_id": 102566,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9998332262039185,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Mycteroperca interstitialis",
+        "Lutjanus griseus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9998332262039185,
+        0.00013130005390848964,
+        3.214236130588688e-05,
+        1.6233799442488817e-06,
+        5.554161361942533e-07
+      ]
+    },
+    {
+      "image_id": 102570,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus malabaricus",
+      "conf": 0.5019965767860413,
+      "top5": [
+        "Epinephelus malabaricus",
+        "Epinephelus itajara",
+        "Ctenochaetus striatus",
+        "Epinephelus morio",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.5019965767860413,
+        0.19806833565235138,
+        0.19383543729782104,
+        0.049901027232408524,
+        0.020498722791671753
+      ]
+    },
+    {
+      "image_id": 102571,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus itajara",
+      "conf": 0.4125834107398987,
+      "top5": [
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Ctenochaetus striatus",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.4125834107398987,
+        0.2849901616573334,
+        0.16716298460960388,
+        0.09807494282722473,
+        0.014491763897240162
+      ]
+    },
+    {
+      "image_id": 102572,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus malabaricus",
+      "conf": 0.4474758207798004,
+      "top5": [
+        "Epinephelus malabaricus",
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Mycteroperca bonaci",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.4474758207798004,
+        0.281089186668396,
+        0.24386075139045715,
+        0.006914657074958086,
+        0.004789222963154316
+      ]
+    },
+    {
+      "image_id": 102578,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus itajara",
+      "conf": 0.615286648273468,
+      "top5": [
+        "Epinephelus itajara",
+        "Epinephelus malabaricus",
+        "Epinephelus morio",
+        "Mycteroperca bonaci",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.615286648273468,
+        0.2646981477737427,
+        0.03905928507447243,
+        0.021370986476540565,
+        0.018018707633018494
+      ]
+    },
+    {
+      "image_id": 102582,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus itajara",
+      "conf": 0.5060842037200928,
+      "top5": [
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Epinephelus striatus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.5060842037200928,
+        0.27493077516555786,
+        0.15785717964172363,
+        0.019130535423755646,
+        0.015314166434109211
+      ]
+    },
+    {
+      "image_id": 102584,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus malabaricus",
+      "conf": 0.4069506824016571,
+      "top5": [
+        "Epinephelus malabaricus",
+        "Ctenochaetus striatus",
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.4069506824016571,
+        0.23587295413017273,
+        0.1515989601612091,
+        0.11631878465414047,
+        0.03307878226041794
+      ]
+    },
+    {
+      "image_id": 102587,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus morio",
+      "conf": 0.3614107668399811,
+      "top5": [
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Mycteroperca bonaci",
+        "Epinephelus itajara",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.3614107668399811,
+        0.23037168383598328,
+        0.16580015420913696,
+        0.15719455480575562,
+        0.04136975109577179
+      ]
+    },
+    {
+      "image_id": 102591,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus morio",
+      "conf": 0.43238380551338196,
+      "top5": [
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Scarus coelestinus",
+        "Mycteroperca bonaci",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.43238380551338196,
+        0.1857071965932846,
+        0.1488180160522461,
+        0.07453297823667526,
+        0.05937166139483452
+      ]
+    },
+    {
+      "image_id": 102594,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9975118637084961,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Chlorurus sordidus",
+        "Epinephelus striatus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9975118637084961,
+        0.002418101066723466,
+        3.0337268981384113e-05,
+        1.2531822903838474e-05,
+        8.849824553180952e-06
+      ]
+    },
+    {
+      "image_id": 102609,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.841709315776825,
+      "top5": [
+        "Epinephelus striatus",
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Lachnolaimus maximus",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.841709315776825,
+        0.06577679514884949,
+        0.03630973771214485,
+        0.027387650683522224,
+        0.011030630208551884
+      ]
+    },
+    {
+      "image_id": 102611,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.909166157245636,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Scarus ghobban",
+        "Scarus guacamaia",
+        "Epinephelus coioides"
+      ],
+      "top5_probs": [
+        0.909166157245636,
+        0.0701303631067276,
+        0.008481175638735294,
+        0.00447322241961956,
+        0.0019989011343568563
+      ]
+    },
+    {
+      "image_id": 102613,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9918252229690552,
+      "top5": [
+        "Epinephelus striatus",
+        "Lutjanus analis",
+        "Epinephelus morio",
+        "Mycteroperca bonaci",
+        "Scarus guacamaia"
+      ],
+      "top5_probs": [
+        0.9918252229690552,
+        0.0037603348027914762,
+        0.0027926426846534014,
+        0.0006695493357256055,
+        0.00021850231860298663
+      ]
+    },
+    {
+      "image_id": 102616,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Lutjanus malabaricus",
+      "conf": 0.3665729761123657,
+      "top5": [
+        "Lutjanus malabaricus",
+        "Epinephelus morio",
+        "Mycteroperca interstitialis",
+        "Mycteroperca bonaci",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.3665729761123657,
+        0.3329165279865265,
+        0.13668756186962128,
+        0.0476100854575634,
+        0.036740854382514954
+      ]
+    },
+    {
+      "image_id": 102617,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus malabaricus",
+      "conf": 0.6147911548614502,
+      "top5": [
+        "Epinephelus malabaricus",
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Mycteroperca bonaci",
+        "Epinephelus itajara"
+      ],
+      "top5_probs": [
+        0.6147911548614502,
+        0.09035727381706238,
+        0.061091698706150055,
+        0.04643464833498001,
+        0.04365377128124237
+      ]
+    },
+    {
+      "image_id": 102618,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Halichoeres trimaculatus",
+      "conf": 0.5597545504570007,
+      "top5": [
+        "Halichoeres trimaculatus",
+        "Scarus coelestinus",
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.5597545504570007,
+        0.07431766390800476,
+        0.06262640655040741,
+        0.05359214171767235,
+        0.04601656273007393
+      ]
+    },
+    {
+      "image_id": 102621,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Pristipomoides multidens",
+      "conf": 0.4104169011116028,
+      "top5": [
+        "Pristipomoides multidens",
+        "Mycteroperca bonaci",
+        "Mycteroperca interstitialis",
+        "Epinephelus morio",
+        "Nemipterus japonicus"
+      ],
+      "top5_probs": [
+        0.4104169011116028,
+        0.14632973074913025,
+        0.1446652114391327,
+        0.04306827113032341,
+        0.040993161499500275
+      ]
+    },
+    {
+      "image_id": 102627,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9998446702957153,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.9998446702957153,
+        0.00012827904720325023,
+        1.6297468391712755e-05,
+        8.318028449139092e-06,
+        1.0524559002078604e-06
+      ]
+    },
+    {
+      "image_id": 102628,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9926365613937378,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Stegastes nigricans",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Halichoeres trimaculatus"
+      ],
+      "top5_probs": [
+        0.9926365613937378,
+        0.0029309808742254972,
+        0.0023139400873333216,
+        0.0018414872465655208,
+        0.00017873983597382903
+      ]
+    },
+    {
+      "image_id": 102629,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9994699358940125,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Stegastes nigricans",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.9994699358940125,
+        0.0003901884483639151,
+        7.687898323638365e-05,
+        4.529924990492873e-05,
+        7.2574307523609605e-06
+      ]
+    },
+    {
+      "image_id": 102634,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus itajara",
+      "conf": 0.43927645683288574,
+      "top5": [
+        "Epinephelus itajara",
+        "Epinephelus sexfasciatus",
+        "Lutjanus malabaricus",
+        "Mycteroperca bonaci",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.43927645683288574,
+        0.12173350900411606,
+        0.10017002373933792,
+        0.07332762330770493,
+        0.06645961850881577
+      ]
+    },
+    {
+      "image_id": 102637,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus morio",
+      "conf": 0.7736687660217285,
+      "top5": [
+        "Epinephelus morio",
+        "Mycteroperca bonaci",
+        "Epinephelus itajara",
+        "Scarus coelestinus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.7736687660217285,
+        0.10639289766550064,
+        0.06799061596393585,
+        0.02380693517625332,
+        0.012043064460158348
+      ]
+    },
+    {
+      "image_id": 102642,
+      "gt": "Scarus guacamaia",
+      "pred": "Scarus guacamaia",
+      "conf": 0.849723219871521,
+      "top5": [
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.849723219871521,
+        0.1484362930059433,
+        0.0008449380984529853,
+        0.0007603446138091385,
+        0.00014738997560925782
+      ]
+    },
+    {
+      "image_id": 102643,
+      "gt": "Scarus guacamaia",
+      "pred": "Chlorurus sordidus",
+      "conf": 0.6936781406402588,
+      "top5": [
+        "Chlorurus sordidus",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Sparisoma viride"
+      ],
+      "top5_probs": [
+        0.6936781406402588,
+        0.21291518211364746,
+        0.06436773389577866,
+        0.015266180969774723,
+        0.0065620713867247105
+      ]
+    },
+    {
+      "image_id": 102648,
+      "gt": "Scarus guacamaia",
+      "pred": "Chlorurus sordidus",
+      "conf": 0.4832606911659241,
+      "top5": [
+        "Chlorurus sordidus",
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus psittacus",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.4832606911659241,
+        0.44941866397857666,
+        0.030307380482554436,
+        0.019402677193284035,
+        0.014301343820989132
+      ]
+    },
+    {
+      "image_id": 102653,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lutjanus malabaricus",
+      "conf": 0.4106081426143646,
+      "top5": [
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lachnolaimus maximus",
+        "Lutjanus griseus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.4106081426143646,
+        0.36036574840545654,
+        0.15575656294822693,
+        0.03655298054218292,
+        0.035242076963186264
+      ]
+    },
+    {
+      "image_id": 102654,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.5087386965751648,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.5087386965751648,
+        0.4629274606704712,
+        0.0248393714427948,
+        0.002967251231893897,
+        0.00026979524409398437
+      ]
+    },
+    {
+      "image_id": 102656,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9771028757095337,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9771028757095337,
+        0.014204064384102821,
+        0.007906506769359112,
+        0.0003673654282465577,
+        0.0001021328498609364
+      ]
+    },
+    {
+      "image_id": 102664,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9998514652252197,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.9998514652252197,
+        0.00012648734264075756,
+        2.071239214274101e-05,
+        3.589646837554028e-07,
+        1.754868179659752e-07
+      ]
+    },
+    {
+      "image_id": 102672,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.998648464679718,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Sparisoma viride",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.998648464679718,
+        0.0012293083127588034,
+        0.00011736893793568015,
+        2.5680049020593287e-06,
+        1.7520288793093641e-06
+      ]
+    },
+    {
+      "image_id": 102674,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9999433755874634,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Chlorurus sordidus",
+        "Scarus psittacus",
+        "Scarus guacamaia"
+      ],
+      "top5_probs": [
+        0.9999433755874634,
+        3.094543717452325e-05,
+        1.5593501302646473e-05,
+        5.902256361878244e-06,
+        3.65199730367749e-06
+      ]
+    },
+    {
+      "image_id": 102679,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9983046054840088,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Scarus psittacus",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.9983046054840088,
+        0.0016766779590398073,
+        1.6604517441010103e-05,
+        1.4422562344407197e-06,
+        4.585524209232972e-07
+      ]
+    },
+    {
+      "image_id": 102680,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9989309906959534,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Chlorurus sordidus",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9989309906959534,
+        0.0010403442429378629,
+        2.710991248022765e-05,
+        6.69853307044832e-07,
+        5.308080517352209e-07
+      ]
+    },
+    {
+      "image_id": 102687,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9983524084091187,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Sparisoma viride",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9983524084091187,
+        0.0014611226506531239,
+        0.00017804036906454712,
+        4.153335794399027e-06,
+        1.9354115465830546e-06
+      ]
+    },
+    {
+      "image_id": 102688,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9989728927612305,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Scarus psittacus",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.9989728927612305,
+        0.001022185431793332,
+        3.1254644454747904e-06,
+        8.875840649125166e-07,
+        8.342026376340073e-07
+      ]
+    },
+    {
+      "image_id": 102689,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9983744621276855,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Chlorurus sordidus",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9983744621276855,
+        0.0016114574391394854,
+        1.2716192941297777e-05,
+        4.197225678126415e-07,
+        4.0417640434498026e-07
+      ]
+    },
+    {
+      "image_id": 102690,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9986440539360046,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Chlorurus sordidus",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9986440539360046,
+        0.001300727715715766,
+        4.1339677409268916e-05,
+        6.896967079228489e-06,
+        4.63006927020615e-06
+      ]
+    },
+    {
+      "image_id": 102693,
+      "gt": "Scarus coelestinus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9972212314605713,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Scarus psittacus",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.9972212314605713,
+        0.002730380045250058,
+        4.411380359670147e-05,
+        2.640169896039879e-06,
+        6.173283964017173e-07
+      ]
+    },
+    {
+      "image_id": 102697,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9885348677635193,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Lutjanus analis",
+        "Scarus coeruleus"
+      ],
+      "top5_probs": [
+        0.9885348677635193,
+        0.010887819342315197,
+        0.0005059924442321062,
+        2.2278958567767404e-05,
+        1.8461805666447617e-05
+      ]
+    },
+    {
+      "image_id": 102701,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.998314619064331,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Lutjanus analis",
+        "Scarus coeruleus"
+      ],
+      "top5_probs": [
+        0.998314619064331,
+        0.0014873346081003547,
+        0.00017070263857021928,
+        1.118474483519094e-05,
+        9.806101843423676e-06
+      ]
+    },
+    {
+      "image_id": 102702,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9986302852630615,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9986302852630615,
+        0.0012801924021914601,
+        6.494134140666574e-05,
+        8.847857316141017e-06,
+        7.426325737469597e-06
+      ]
+    },
+    {
+      "image_id": 102704,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999996423721313,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Mycteroperca bonaci",
+        "Lutjanus analis",
+        "Pastinachus sephen",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.9999996423721313,
+        1.7678145525223954e-07,
+        8.240409954396455e-08,
+        5.2313737342046807e-08,
+        2.0627901164971263e-08
+      ]
+    },
+    {
+      "image_id": 102705,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999994039535522,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Pastinachus sephen",
+        "Mycteroperca bonaci",
+        "Halichoeres trimaculatus"
+      ],
+      "top5_probs": [
+        0.9999994039535522,
+        3.8092508702902705e-07,
+        7.800611712127647e-08,
+        4.238822626234651e-08,
+        1.955753425875173e-08
+      ]
+    },
+    {
+      "image_id": 102706,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999933242797852,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Scarus coelestinus",
+        "Sparisoma viride",
+        "Parupeneus multifasciatus"
+      ],
+      "top5_probs": [
+        0.9999933242797852,
+        3.680374902614858e-06,
+        7.327676598833932e-07,
+        6.118673923083406e-07,
+        4.5717095531472296e-07
+      ]
+    },
+    {
+      "image_id": 102761,
+      "gt": "Sparisoma viride",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9941030144691467,
+      "top5": [
+        "Scarus coelestinus",
+        "Epinephelus malabaricus",
+        "Epinephelus itajara",
+        "Epinephelus sexfasciatus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9941030144691467,
+        0.0018619149923324585,
+        0.0014119655825197697,
+        0.0009218940394930542,
+        0.0005024694837629795
+      ]
+    },
+    {
+      "image_id": 102763,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9780826568603516,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus psittacus",
+        "Scarus coelestinus",
+        "Scarus oviceps",
+        "Acanthurus nigrofuscus"
+      ],
+      "top5_probs": [
+        0.9780826568603516,
+        0.015343951061367989,
+        0.003948206081986427,
+        0.0011445357231423259,
+        0.00035836530150845647
+      ]
+    },
+    {
+      "image_id": 102764,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9911892414093018,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus oviceps",
+        "Scarus psittacus",
+        "Chlorurus sordidus",
+        "Thalassoma quinquevittatum"
+      ],
+      "top5_probs": [
+        0.9911892414093018,
+        0.004323957487940788,
+        0.0019422214245423675,
+        0.0007528946734964848,
+        0.0007439443725161254
+      ]
+    },
+    {
+      "image_id": 102768,
+      "gt": "Sparisoma viride",
+      "pred": "Abalistes stellaris",
+      "conf": 0.5958611369132996,
+      "top5": [
+        "Abalistes stellaris",
+        "Pristipomoides multidens",
+        "Cynoglossus lingua",
+        "Halichoeres hortulanus",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.5958611369132996,
+        0.23460730910301208,
+        0.04071393236517906,
+        0.019095050171017647,
+        0.017053473740816116
+      ]
+    },
+    {
+      "image_id": 102773,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.853959321975708,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus psittacus",
+        "Scarus coelestinus",
+        "Lachnolaimus maximus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.853959321975708,
+        0.08869746327400208,
+        0.021025344729423523,
+        0.017555207014083862,
+        0.005375093314796686
+      ]
+    },
+    {
+      "image_id": 102774,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.5779115557670593,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus coelestinus",
+        "Halichoeres trimaculatus",
+        "Scarus psittacus",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.5779115557670593,
+        0.18786105513572693,
+        0.16964904963970184,
+        0.030887963250279427,
+        0.011358539573848248
+      ]
+    },
+    {
+      "image_id": 102775,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.6930351853370667,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Chlorurus sordidus",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.6930351853370667,
+        0.282649427652359,
+        0.011370377615094185,
+        0.0037558656185865402,
+        0.0036696449387818575
+      ]
+    },
+    {
+      "image_id": 102776,
+      "gt": "Scarus coeruleus",
+      "pred": "Thalassoma quinquevittatum",
+      "conf": 0.43430063128471375,
+      "top5": [
+        "Thalassoma quinquevittatum",
+        "Halichoeres trimaculatus",
+        "Scarus coeruleus",
+        "Scomberomorus guttatus",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.43430063128471375,
+        0.19437506794929504,
+        0.16168074309825897,
+        0.09365398436784744,
+        0.03121175616979599
+      ]
+    },
+    {
+      "image_id": 102777,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.7975262999534607,
+      "top5": [
+        "Scarus coeruleus",
+        "Halichoeres trimaculatus",
+        "Scarus coelestinus",
+        "Thalassoma quinquevittatum",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.7975262999534607,
+        0.06607335060834885,
+        0.06165224313735962,
+        0.02861752361059189,
+        0.02076823078095913
+      ]
+    },
+    {
+      "image_id": 102778,
+      "gt": "Scarus coeruleus",
+      "pred": "Arothron nigropunctatus",
+      "conf": 0.41236570477485657,
+      "top5": [
+        "Arothron nigropunctatus",
+        "Scarus coelestinus",
+        "Arothron meleagris",
+        "Mycteroperca bonaci",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.41236570477485657,
+        0.2754461169242859,
+        0.0762244313955307,
+        0.05477917939424515,
+        0.03644502907991409
+      ]
+    },
+    {
+      "image_id": 102783,
+      "gt": "Scarus coeruleus",
+      "pred": "Epinephelus merra",
+      "conf": 0.26730838418006897,
+      "top5": [
+        "Epinephelus merra",
+        "Sparisoma viride",
+        "Pristipomoides multidens",
+        "Chromis viridis",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.26730838418006897,
+        0.08832331001758575,
+        0.08200917392969131,
+        0.08000437170267105,
+        0.07766811549663544
+      ]
+    },
+    {
+      "image_id": 102803,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9998704195022583,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9998704195022583,
+        0.00011441398237366229,
+        1.2812334716727491e-05,
+        4.806116749023204e-07,
+        4.275741503079189e-07
+      ]
+    },
+    {
+      "image_id": 102805,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9990548491477966,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Lutjanus analis",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9990548491477966,
+        0.000903065491002053,
+        2.6450359655427746e-05,
+        8.686310138728004e-06,
+        1.9592746411944972e-06
+      ]
+    },
+    {
+      "image_id": 102806,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9988396763801575,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9988396763801575,
+        0.0011255929712206125,
+        2.1584823116427287e-05,
+        5.883676749363076e-06,
+        2.1205630673648557e-06
+      ]
+    },
+    {
+      "image_id": 102807,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9994688630104065,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Lutjanus analis",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.9994688630104065,
+        0.0004908432601951063,
+        1.478536069043912e-05,
+        9.912950190482661e-06,
+        3.621056293923175e-06
+      ]
+    },
+    {
+      "image_id": 102814,
+      "gt": "Sparisoma viride",
+      "pred": "Ctenochaetus striatus",
+      "conf": 0.4805377423763275,
+      "top5": [
+        "Ctenochaetus striatus",
+        "Scarus coelestinus",
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.4805377423763275,
+        0.27011826634407043,
+        0.12913531064987183,
+        0.02267717570066452,
+        0.013589181005954742
+      ]
+    },
+    {
+      "image_id": 102816,
+      "gt": "Sparisoma viride",
+      "pred": "Acanthurus nigrofuscus",
+      "conf": 0.34447821974754333,
+      "top5": [
+        "Acanthurus nigrofuscus",
+        "Epinephelus itajara",
+        "Halichoeres hortulanus",
+        "Epinephelus malabaricus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.34447821974754333,
+        0.19698886573314667,
+        0.1244124323129654,
+        0.11060996353626251,
+        0.0381484292447567
+      ]
+    },
+    {
+      "image_id": 102819,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Scarus coelestinus",
+      "conf": 0.7339767217636108,
+      "top5": [
+        "Scarus coelestinus",
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Arothron nigropunctatus",
+        "Aetobatus narinari"
+      ],
+      "top5_probs": [
+        0.7339767217636108,
+        0.18009048700332642,
+        0.020458515733480453,
+        0.008713985793292522,
+        0.007478672079741955
+      ]
+    },
+    {
+      "image_id": 102821,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Abalistes stellaris",
+      "conf": 0.4954240322113037,
+      "top5": [
+        "Abalistes stellaris",
+        "Scarus coelestinus",
+        "Aetobatus narinari",
+        "Epinephelus itajara",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.4954240322113037,
+        0.297556072473526,
+        0.037128038704395294,
+        0.03399699181318283,
+        0.025103984400629997
+      ]
+    },
+    {
+      "image_id": 102823,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Ctenochaetus striatus",
+      "conf": 0.8097264170646667,
+      "top5": [
+        "Ctenochaetus striatus",
+        "Scarus coelestinus",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci",
+        "Zebrasoma scopas"
+      ],
+      "top5_probs": [
+        0.8097264170646667,
+        0.1589217483997345,
+        0.016256073489785194,
+        0.006888219155371189,
+        0.0015034001553431153
+      ]
+    },
+    {
+      "image_id": 102824,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Ctenochaetus striatus",
+      "conf": 0.5103172659873962,
+      "top5": [
+        "Ctenochaetus striatus",
+        "Acanthurus nigrofuscus",
+        "Scarus coelestinus",
+        "Pastinachus sephen",
+        "Zebrasoma scopas"
+      ],
+      "top5_probs": [
+        0.5103172659873962,
+        0.4747670292854309,
+        0.00951711181551218,
+        0.001939376350492239,
+        0.001914516557008028
+      ]
+    },
+    {
+      "image_id": 102856,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999911785125732,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.9999911785125732,
+        5.179844265512656e-06,
+        1.2381647138681728e-06,
+        1.0036186495199217e-06,
+        6.081916126277065e-07
+      ]
+    },
+    {
+      "image_id": 102857,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999746084213257,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis",
+        "Lutjanus griseus"
+      ],
+      "top5_probs": [
+        0.9999746084213257,
+        1.7821124856709503e-05,
+        4.346794412413146e-06,
+        2.0826016680075554e-06,
+        4.0251282484859985e-07
+      ]
+    },
+    {
+      "image_id": 102858,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9996708631515503,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9996708631515503,
+        0.0003011610242538154,
+        1.1079765499744099e-05,
+        5.1221149988123216e-06,
+        4.615510079020169e-06
+      ]
+    },
+    {
+      "image_id": 102859,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9998087286949158,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.9998087286949158,
+        0.00015754449123051018,
+        1.9231083570048213e-05,
+        8.001432433957234e-06,
+        3.0309136036521522e-06
+      ]
+    },
+    {
+      "image_id": 102860,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999822378158569,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9999822378158569,
+        9.686849807621911e-06,
+        3.0750222776987357e-06,
+        1.820389911699749e-06,
+        1.400611040480726e-06
+      ]
+    },
+    {
+      "image_id": 102861,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999911785125732,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9999911785125732,
+        6.518752343254164e-06,
+        6.716343818879977e-07,
+        6.22737957201025e-07,
+        3.022596501978114e-07
+      ]
+    },
+    {
+      "image_id": 102862,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999736547470093,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis",
+        "Lutjanus griseus"
+      ],
+      "top5_probs": [
+        0.9999736547470093,
+        1.98973484657472e-05,
+        5.00516762258485e-06,
+        5.424047344604332e-07,
+        5.158533440408064e-07
+      ]
+    },
+    {
+      "image_id": 102863,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9993322491645813,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9993322491645813,
+        0.000601708423346281,
+        4.2713090806500986e-05,
+        1.2589607649715617e-05,
+        5.316944680089364e-06
+      ]
+    },
+    {
+      "image_id": 102864,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999517202377319,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis",
+        "Lutjanus griseus"
+      ],
+      "top5_probs": [
+        0.9999517202377319,
+        4.130532033741474e-05,
+        4.206345238344511e-06,
+        1.6802619029476773e-06,
+        6.587133043467475e-07
+      ]
+    },
+    {
+      "image_id": 102865,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9991275668144226,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus fulvus",
+        "Lutjanus griseus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9991275668144226,
+        0.0008396811899729073,
+        1.379269906465197e-05,
+        1.0252679203404114e-05,
+        5.877183866687119e-06
+      ]
+    },
+    {
+      "image_id": 102866,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9996508359909058,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9996508359909058,
+        0.00033342448296025395,
+        8.511652595188934e-06,
+        4.888950570602901e-06,
+        1.335341494268505e-06
+      ]
+    },
+    {
+      "image_id": 102867,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9992668032646179,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9992668032646179,
+        0.000659331155475229,
+        6.161742203403264e-05,
+        9.200984095514286e-06,
+        1.4648204569311929e-06
+      ]
+    },
+    {
+      "image_id": 102868,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9974392652511597,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.9974392652511597,
+        0.002335420809686184,
+        0.00013819917512591928,
+        4.9074584239860997e-05,
+        3.3407417504349723e-05
+      ]
+    },
+    {
+      "image_id": 102869,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9922641515731812,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus fulvus",
+        "Lutjanus griseus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9922641515731812,
+        0.006242150440812111,
+        0.0006899103173054755,
+        0.0005271615809760988,
+        0.00025716223171912134
+      ]
+    },
+    {
+      "image_id": 102870,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.99944669008255,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.99944669008255,
+        0.0002536602842155844,
+        0.00016578432405367494,
+        0.00011573787196539342,
+        1.4050830031919759e-05
+      ]
+    },
+    {
+      "image_id": 102871,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9995631575584412,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9995631575584412,
+        0.00027948603383265436,
+        0.00014264897617977113,
+        1.1236347745580133e-05,
+        1.5812931906111771e-06
+      ]
+    },
+    {
+      "image_id": 102876,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus striatus",
+      "conf": 0.5452088713645935,
+      "top5": [
+        "Epinephelus striatus",
+        "Mycteroperca bonaci",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Epinephelus merra"
+      ],
+      "top5_probs": [
+        0.5452088713645935,
+        0.27164047956466675,
+        0.14532214403152466,
+        0.02864806354045868,
+        0.0036640155594795942
+      ]
+    },
+    {
+      "image_id": 102878,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus itajara",
+      "conf": 0.3929268419742584,
+      "top5": [
+        "Epinephelus itajara",
+        "Epinephelus malabaricus",
+        "Epinephelus striatus",
+        "Epinephelus merra",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.3929268419742584,
+        0.3278934061527252,
+        0.12282665818929672,
+        0.04721248149871826,
+        0.03647198900580406
+      ]
+    },
+    {
+      "image_id": 102879,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Mycteroperca bonaci",
+      "conf": 0.49761831760406494,
+      "top5": [
+        "Mycteroperca bonaci",
+        "Epinephelus striatus",
+        "Epinephelus itajara",
+        "Epinephelus malabaricus",
+        "Epinephelus merra"
+      ],
+      "top5_probs": [
+        0.49761831760406494,
+        0.44467759132385254,
+        0.02067042514681816,
+        0.010799622163176537,
+        0.007946512661874294
+      ]
+    },
+    {
+      "image_id": 102880,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Mycteroperca bonaci",
+      "conf": 0.49809032678604126,
+      "top5": [
+        "Mycteroperca bonaci",
+        "Epinephelus striatus",
+        "Epinephelus merra",
+        "Epinephelus malabaricus",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.49809032678604126,
+        0.23806461691856384,
+        0.0820000171661377,
+        0.06926251947879791,
+        0.043327171355485916
+      ]
+    },
+    {
+      "image_id": 102881,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus striatus",
+      "conf": 0.34273290634155273,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus malabaricus",
+        "Mycteroperca bonaci",
+        "Epinephelus itajara",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.34273290634155273,
+        0.2560378909111023,
+        0.13832403719425201,
+        0.10083702951669693,
+        0.061944037675857544
+      ]
+    },
+    {
+      "image_id": 102885,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Epinephelus striatus",
+      "conf": 0.6637714505195618,
+      "top5": [
+        "Epinephelus striatus",
+        "Mycteroperca bonaci",
+        "Epinephelus itajara",
+        "Epinephelus merra",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.6637714505195618,
+        0.21742558479309082,
+        0.05416901409626007,
+        0.04140247777104378,
+        0.01324080303311348
+      ]
+    },
+    {
+      "image_id": 102903,
+      "gt": "Sparisoma viride",
+      "pred": "Lutjanus fulvus",
+      "conf": 0.540695309638977,
+      "top5": [
+        "Lutjanus fulvus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Ocyurus chrysurus"
+      ],
+      "top5_probs": [
+        0.540695309638977,
+        0.42002546787261963,
+        0.031096678227186203,
+        0.004893554374575615,
+        0.0029869910795241594
+      ]
+    },
+    {
+      "image_id": 102951,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9965564012527466,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Chlorurus sordidus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9965564012527466,
+        0.0033648135140538216,
+        4.7201749111991376e-05,
+        1.1750160410883836e-05,
+        7.140793059079442e-06
+      ]
+    },
+    {
+      "image_id": 102953,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.996391236782074,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.996391236782074,
+        0.002934176940470934,
+        0.0006570327095687389,
+        8.079936378635466e-06,
+        2.324098659300944e-06
+      ]
+    },
+    {
+      "image_id": 102954,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9984524250030518,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus coeruleus"
+      ],
+      "top5_probs": [
+        0.9984524250030518,
+        0.0013550922740250826,
+        0.00018462158914189786,
+        3.2459715839650016e-06,
+        1.6797085891084862e-06
+      ]
+    },
+    {
+      "image_id": 102955,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9937839508056641,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.9937839508056641,
+        0.006004419643431902,
+        0.0002030616014963016,
+        3.042794332941412e-06,
+        1.7116061599153909e-06
+      ]
+    },
+    {
+      "image_id": 102956,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9991843104362488,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.9991843104362488,
+        0.0007738129352219403,
+        3.758665479836054e-05,
+        1.5595214790664613e-06,
+        7.825001944183896e-07
+      ]
+    },
+    {
+      "image_id": 102961,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9941529631614685,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus psittacus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9941529631614685,
+        0.005308518651872873,
+        0.0005154540995135903,
+        7.2279435698874295e-06,
+        5.776639227406122e-06
+      ]
+    },
+    {
+      "image_id": 102964,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9996542930603027,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Pastinachus sephen",
+        "Epinephelus sexfasciatus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9996542930603027,
+        0.0002481479023117572,
+        7.089191058184952e-05,
+        4.719445314549375e-06,
+        4.457912382349605e-06
+      ]
+    },
+    {
+      "image_id": 102966,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.999985933303833,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Pastinachus sephen",
+        "Mycteroperca interstitialis",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.999985933303833,
+        8.765170605329331e-06,
+        3.6872754662908847e-06,
+        4.6653130425511335e-07,
+        3.8129209656290186e-07
+      ]
+    },
+    {
+      "image_id": 102967,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999369382858276,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Pastinachus sephen",
+        "Parupeneus multifasciatus",
+        "Ctenochaetus striatus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9999369382858276,
+        4.8080371925607324e-05,
+        6.4461933106940705e-06,
+        5.145572231413098e-06,
+        5.7205579651054e-07
+      ]
+    },
+    {
+      "image_id": 102968,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999526739120483,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Pastinachus sephen",
+        "Ctenochaetus striatus",
+        "Parupeneus multifasciatus",
+        "Sparisoma viride"
+      ],
+      "top5_probs": [
+        0.9999526739120483,
+        2.342187872272916e-05,
+        1.0131391718459781e-05,
+        5.7593856581661385e-06,
+        1.4263855518947821e-06
+      ]
+    },
+    {
+      "image_id": 102969,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999969005584717,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Pastinachus sephen",
+        "Parupeneus multifasciatus",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.9999969005584717,
+        2.0660941117967013e-06,
+        4.23084969725096e-07,
+        2.037159561041335e-07,
+        9.390414135168612e-08
+      ]
+    },
+    {
+      "image_id": 102970,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999983310699463,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Pastinachus sephen",
+        "Mycteroperca bonaci",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9999983310699463,
+        1.1846913139379467e-06,
+        2.0053802529673703e-07,
+        1.1419035672588507e-07,
+        6.694492071801506e-08
+      ]
+    },
+    {
+      "image_id": 102971,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999929666519165,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Pastinachus sephen",
+        "Ctenochaetus striatus",
+        "Parupeneus multifasciatus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9999929666519165,
+        2.557785137469182e-06,
+        2.4054213554336457e-06,
+        1.1357335552020231e-06,
+        2.7097945576315396e-07
+      ]
+    },
+    {
+      "image_id": 102973,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999980926513672,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Mycteroperca bonaci",
+        "Pastinachus sephen",
+        "Ctenochaetus striatus",
+        "Parupeneus multifasciatus"
+      ],
+      "top5_probs": [
+        0.9999980926513672,
+        3.4927614933621953e-07,
+        2.984430125252402e-07,
+        2.662296765265637e-07,
+        1.5973529343682458e-07
+      ]
+    },
+    {
+      "image_id": 102974,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999600648880005,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Parupeneus multifasciatus",
+        "Pastinachus sephen",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9999600648880005,
+        1.0988712347170804e-05,
+        1.0274304258928169e-05,
+        7.737602572888136e-06,
+        2.352160436203121e-06
+      ]
+    },
+    {
+      "image_id": 102975,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9993820190429688,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Pastinachus sephen",
+        "Parupeneus multifasciatus",
+        "Halichoeres hortulanus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.9993820190429688,
+        0.00048404745757579803,
+        5.467008304549381e-05,
+        3.57693643309176e-05,
+        1.269934273295803e-05
+      ]
+    },
+    {
+      "image_id": 102976,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999912977218628,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Pastinachus sephen",
+        "Parupeneus multifasciatus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9999912977218628,
+        4.80303424410522e-06,
+        2.7720318485080497e-06,
+        2.5965525196625094e-07,
+        1.735671872893363e-07
+      ]
+    },
+    {
+      "image_id": 102985,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9728251695632935,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus oviceps",
+        "Scarus guacamaia",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9728251695632935,
+        0.021557951346039772,
+        0.002348928479477763,
+        0.000900635146535933,
+        0.0008143422310240567
+      ]
+    },
+    {
+      "image_id": 102986,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.9606366753578186,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Scarus psittacus",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.9606366753578186,
+        0.030393565073609352,
+        0.004145361948758364,
+        0.0020800342317670584,
+        0.001713922480121255
+      ]
+    },
+    {
+      "image_id": 102987,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.5442795157432556,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus oviceps",
+        "Scarus guacamaia",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.5442795157432556,
+        0.4192570447921753,
+        0.025217944756150246,
+        0.003953936044126749,
+        0.003879487281665206
+      ]
+    },
+    {
+      "image_id": 102988,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9875639081001282,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Arothron meleagris",
+        "Epinephelus morio",
+        "Anodontostoma chacunda"
+      ],
+      "top5_probs": [
+        0.9875639081001282,
+        0.0036250806879252195,
+        0.0017304051434621215,
+        0.0011746935779228806,
+        0.0011030258610844612
+      ]
+    },
+    {
+      "image_id": 102990,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9483684301376343,
+      "top5": [
+        "Scarus coelestinus",
+        "Epinephelus morio",
+        "Scarus coeruleus",
+        "Epinephelus itajara",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.9483684301376343,
+        0.035808224231004715,
+        0.0094610545784235,
+        0.0026160392444580793,
+        0.001791123184375465
+      ]
+    },
+    {
+      "image_id": 102992,
+      "gt": "Sparisoma viride",
+      "pred": "Aetobatus narinari",
+      "conf": 0.3923644721508026,
+      "top5": [
+        "Aetobatus narinari",
+        "Chlorurus sordidus",
+        "Pristipomoides multidens",
+        "Epinephelus sexfasciatus",
+        "Anodontostoma chacunda"
+      ],
+      "top5_probs": [
+        0.3923644721508026,
+        0.12690144777297974,
+        0.06294551491737366,
+        0.050387490540742874,
+        0.05003906413912773
+      ]
+    },
+    {
+      "image_id": 102993,
+      "gt": "Sparisoma viride",
+      "pred": "Chlorurus sordidus",
+      "conf": 0.6129952073097229,
+      "top5": [
+        "Chlorurus sordidus",
+        "Scarus coelestinus",
+        "Sparisoma viride",
+        "Scarus oviceps",
+        "Rhynchobatus djiddensis"
+      ],
+      "top5_probs": [
+        0.6129952073097229,
+        0.16781388223171234,
+        0.08412498235702515,
+        0.02690458483994007,
+        0.013556422665715218
+      ]
+    },
+    {
+      "image_id": 102994,
+      "gt": "Sparisoma viride",
+      "pred": "Pristipomoides multidens",
+      "conf": 0.5138817429542542,
+      "top5": [
+        "Pristipomoides multidens",
+        "Aetobatus narinari",
+        "Scarus coelestinus",
+        "Anodontostoma chacunda",
+        "Rhynchobatus djiddensis"
+      ],
+      "top5_probs": [
+        0.5138817429542542,
+        0.3189924657344818,
+        0.0434221476316452,
+        0.021418582648038864,
+        0.016313988715410233
+      ]
+    },
+    {
+      "image_id": 102995,
+      "gt": "Sparisoma viride",
+      "pred": "Pristipomoides multidens",
+      "conf": 0.24533218145370483,
+      "top5": [
+        "Pristipomoides multidens",
+        "Scarus coelestinus",
+        "Epinephelus sexfasciatus",
+        "Aetobatus narinari",
+        "Arothron meleagris"
+      ],
+      "top5_probs": [
+        0.24533218145370483,
+        0.17810702323913574,
+        0.15384681522846222,
+        0.10608432441949844,
+        0.08494413644075394
+      ]
+    },
+    {
+      "image_id": 102996,
+      "gt": "Sparisoma viride",
+      "pred": "Aetobatus narinari",
+      "conf": 0.36968913674354553,
+      "top5": [
+        "Aetobatus narinari",
+        "Scarus coelestinus",
+        "Sparisoma viride",
+        "Epinephelus morio",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.36968913674354553,
+        0.24580428004264832,
+        0.18472430109977722,
+        0.0637032613158226,
+        0.055003490298986435
+      ]
+    },
+    {
+      "image_id": 102997,
+      "gt": "Sparisoma viride",
+      "pred": "Scarus coelestinus",
+      "conf": 0.511620044708252,
+      "top5": [
+        "Scarus coelestinus",
+        "Aetobatus narinari",
+        "Chlorurus sordidus",
+        "Epinephelus sexfasciatus",
+        "Zebrasoma scopas"
+      ],
+      "top5_probs": [
+        0.511620044708252,
+        0.1605088710784912,
+        0.15072545409202576,
+        0.0432124100625515,
+        0.01941237971186638
+      ]
+    },
+    {
+      "image_id": 103001,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9998973608016968,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Parupeneus multifasciatus",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.9998973608016968,
+        8.417940262006596e-05,
+        1.5931773305055685e-05,
+        6.903960070303583e-07,
+        5.094526613902417e-07
+      ]
+    },
+    {
+      "image_id": 103014,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9971323013305664,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9971323013305664,
+        0.0014767758548259735,
+        0.0007377977017313242,
+        0.00037167072878219187,
+        8.754042937653139e-05
+      ]
+    },
+    {
+      "image_id": 103016,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.543289840221405,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus coelestinus",
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus oviceps"
+      ],
+      "top5_probs": [
+        0.543289840221405,
+        0.325196236371994,
+        0.08036255836486816,
+        0.019859889522194862,
+        0.011630929075181484
+      ]
+    },
+    {
+      "image_id": 103019,
+      "gt": "Sparisoma viride",
+      "pred": "Scarus oviceps",
+      "conf": 0.3732949495315552,
+      "top5": [
+        "Scarus oviceps",
+        "Scarus coelestinus",
+        "Halichoeres trimaculatus",
+        "Arothron nigropunctatus",
+        "Scarus coeruleus"
+      ],
+      "top5_probs": [
+        0.3732949495315552,
+        0.2193090170621872,
+        0.1441773772239685,
+        0.08159855008125305,
+        0.036489926278591156
+      ]
+    },
+    {
+      "image_id": 111914,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9988480806350708,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Epinephelus sexfasciatus",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9988480806350708,
+        0.0009006356704048812,
+        0.00010870036203414202,
+        9.247653360944241e-05,
+        4.118550714338198e-05
+      ]
+    },
+    {
+      "image_id": 111915,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9964930415153503,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Mycteroperca bonaci",
+        "Epinephelus itajara",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.9964930415153503,
+        0.0033287513069808483,
+        9.766729635884985e-05,
+        5.040021278546192e-05,
+        2.519754707464017e-05
+      ]
+    },
+    {
+      "image_id": 111916,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.5225723385810852,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus itajara",
+        "Epinephelus malabaricus",
+        "Mycteroperca bonaci",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.5225723385810852,
+        0.36205121874809265,
+        0.07969731837511063,
+        0.023023726418614388,
+        0.00945194624364376
+      ]
+    },
+    {
+      "image_id": 111917,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.975105345249176,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci",
+        "Epinephelus coioides"
+      ],
+      "top5_probs": [
+        0.975105345249176,
+        0.014602524228394032,
+        0.008967812173068523,
+        0.0012323459377512336,
+        4.8542377044213936e-05
+      ]
+    },
+    {
+      "image_id": 111918,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.7759453058242798,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus coioides",
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.7759453058242798,
+        0.1712261438369751,
+        0.01683073304593563,
+        0.014292505569756031,
+        0.007912909612059593
+      ]
+    },
+    {
+      "image_id": 111919,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.5939258933067322,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.5939258933067322,
+        0.39559468626976013,
+        0.008815397508442402,
+        0.0009899925207719207,
+        0.0002838995715137571
+      ]
+    },
+    {
+      "image_id": 111922,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.7275617718696594,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.7275617718696594,
+        0.2611328363418579,
+        0.00806507933884859,
+        0.001989678479731083,
+        0.0008269162499345839
+      ]
+    },
+    {
+      "image_id": 111923,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9996895790100098,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Scarus coelestinus",
+        "Pastinachus sephen",
+        "Scarus guacamaia"
+      ],
+      "top5_probs": [
+        0.9996895790100098,
+        0.00029066845308989286,
+        1.3427136764221359e-05,
+        1.7461782135796966e-06,
+        1.3614302361020236e-06
+      ]
+    },
+    {
+      "image_id": 111924,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.969515323638916,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Ctenochaetus striatus",
+        "Pastinachus sephen",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.969515323638916,
+        0.0275048166513443,
+        0.0027656727470457554,
+        7.863766950322315e-05,
+        6.334328645607457e-05
+      ]
+    },
+    {
+      "image_id": 111925,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9987860321998596,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.9987860321998596,
+        0.001129847252741456,
+        3.86158462788444e-05,
+        2.1662437575287186e-05,
+        1.8935583284473978e-05
+      ]
+    },
+    {
+      "image_id": 111926,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.790587842464447,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus sexfasciatus",
+        "Mycteroperca bonaci",
+        "Lutjanus malabaricus",
+        "Parupeneus multifasciatus"
+      ],
+      "top5_probs": [
+        0.790587842464447,
+        0.18302084505558014,
+        0.012190415523946285,
+        0.008377191610634327,
+        0.001498565310612321
+      ]
+    },
+    {
+      "image_id": 111927,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9991481304168701,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Ctenochaetus striatus",
+        "Rhynchobatus djiddensis",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9991481304168701,
+        0.00035151970223523676,
+        0.00030896675889380276,
+        0.00018091921810992062,
+        2.4324431251443457e-06
+      ]
+    },
+    {
+      "image_id": 111928,
+      "gt": "Sparisoma viride",
+      "pred": "Scarus coelestinus",
+      "conf": 0.6579107642173767,
+      "top5": [
+        "Scarus coelestinus",
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Chlorurus sordidus",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.6579107642173767,
+        0.3223460018634796,
+        0.008547767996788025,
+        0.008199951611459255,
+        0.0008098233374767005
+      ]
+    },
+    {
+      "image_id": 111929,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.6585702300071716,
+      "top5": [
+        "Epinephelus striatus",
+        "Lutjanus malabaricus",
+        "Mycteroperca bonaci",
+        "Epinephelus coioides",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.6585702300071716,
+        0.2627086937427521,
+        0.028646159917116165,
+        0.02282608114182949,
+        0.010279027745127678
+      ]
+    },
+    {
+      "image_id": 111933,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9884533286094666,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.9884533286094666,
+        0.007360504474490881,
+        0.0019102541264146566,
+        0.0009238654165528715,
+        0.0007957717753015459
+      ]
+    },
+    {
+      "image_id": 111936,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9984403252601624,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus ghobban",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.9984403252601624,
+        0.0009706852142699063,
+        0.000556419079657644,
+        1.878043622127734e-05,
+        6.86912244418636e-06
+      ]
+    },
+    {
+      "image_id": 111937,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.8382859230041504,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus coelestinus",
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.8382859230041504,
+        0.1584227830171585,
+        0.002693431219086051,
+        0.000382146768970415,
+        0.00016251447959803045
+      ]
+    },
+    {
+      "image_id": 111942,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9881812334060669,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Epinephelus itajara",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.9881812334060669,
+        0.007332194596529007,
+        0.002200046554207802,
+        0.001376727712340653,
+        0.0005866262363269925
+      ]
+    },
+    {
+      "image_id": 111943,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9816306233406067,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.9816306233406067,
+        0.015186271630227566,
+        0.0014110569609329104,
+        0.0012164489598944783,
+        0.00022532191360369325
+      ]
+    },
+    {
+      "image_id": 129161,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Ocyurus chrysurus",
+      "conf": 0.9999003410339355,
+      "top5": [
+        "Ocyurus chrysurus",
+        "Mulloidichthys flavolineatus",
+        "Pristipomoides multidens",
+        "Lutjanus analis",
+        "Scomberomorus guttatus"
+      ],
+      "top5_probs": [
+        0.9999003410339355,
+        3.314832429168746e-05,
+        1.712681114440784e-05,
+        1.2341581168584526e-05,
+        1.1430609447415918e-05
+      ]
+    },
+    {
+      "image_id": 129162,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Ocyurus chrysurus",
+      "conf": 0.999937891960144,
+      "top5": [
+        "Ocyurus chrysurus",
+        "Pristipomoides multidens",
+        "Lutjanus malabaricus",
+        "Halichoeres hortulanus",
+        "Caesio cuning"
+      ],
+      "top5_probs": [
+        0.999937891960144,
+        5.598123243544251e-05,
+        1.321866534453875e-06,
+        1.2598576404343476e-06,
+        1.1190497843927005e-06
+      ]
+    },
+    {
+      "image_id": 129164,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.5394781231880188,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus itajara",
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.5394781231880188,
+        0.377969354391098,
+        0.03292319178581238,
+        0.0235366839915514,
+        0.012860880233347416
+      ]
+    },
+    {
+      "image_id": 129166,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Halichoeres trimaculatus",
+      "conf": 0.24310597777366638,
+      "top5": [
+        "Halichoeres trimaculatus",
+        "Stolephorus commersonnii",
+        "Cynoglossus lingua",
+        "Halichoeres hortulanus",
+        "Anodontostoma chacunda"
+      ],
+      "top5_probs": [
+        0.24310597777366638,
+        0.17708496749401093,
+        0.16827642917633057,
+        0.1490846574306488,
+        0.054212212562561035
+      ]
+    },
+    {
+      "image_id": 129167,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Abalistes stellaris",
+      "conf": 0.7861592769622803,
+      "top5": [
+        "Abalistes stellaris",
+        "Rhynchobatus djiddensis",
+        "Scarus oviceps",
+        "Lutjanus malabaricus",
+        "Mulloidichthys flavolineatus"
+      ],
+      "top5_probs": [
+        0.7861592769622803,
+        0.05551166832447052,
+        0.023266131058335304,
+        0.014130745083093643,
+        0.013438412919640541
+      ]
+    },
+    {
+      "image_id": 129168,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Ocyurus chrysurus",
+      "conf": 0.9996165037155151,
+      "top5": [
+        "Ocyurus chrysurus",
+        "Pristipomoides multidens",
+        "Mycteroperca bonaci",
+        "Lutjanus analis",
+        "Scomberomorus guttatus"
+      ],
+      "top5_probs": [
+        0.9996165037155151,
+        0.00011449537851149216,
+        9.880176367005333e-05,
+        8.132234506774694e-05,
+        2.8153077437309548e-05
+      ]
+    },
+    {
+      "image_id": 129174,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Ocyurus chrysurus",
+      "conf": 0.999957799911499,
+      "top5": [
+        "Ocyurus chrysurus",
+        "Pristipomoides multidens",
+        "Mulloidichthys flavolineatus",
+        "Scomberomorus commerson",
+        "Caesio cuning"
+      ],
+      "top5_probs": [
+        0.999957799911499,
+        9.759161002875771e-06,
+        7.1851463872008026e-06,
+        7.1312711042992305e-06,
+        6.387311714206589e-06
+      ]
+    },
+    {
+      "image_id": 129176,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.9612407684326172,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Scarus oviceps",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9612407684326172,
+        0.019110629335045815,
+        0.012018994428217411,
+        0.003534801071509719,
+        0.0032091066241264343
+      ]
+    },
+    {
+      "image_id": 129177,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.8875479698181152,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus coelestinus",
+        "Chlorurus sordidus",
+        "Scarus oviceps",
+        "Scarus guacamaia"
+      ],
+      "top5_probs": [
+        0.8875479698181152,
+        0.07945218682289124,
+        0.01834011822938919,
+        0.005924687255173922,
+        0.005189175717532635
+      ]
+    },
+    {
+      "image_id": 129181,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Cynoglossus lingua",
+      "conf": 0.4320448935031891,
+      "top5": [
+        "Cynoglossus lingua",
+        "Anodontostoma chacunda",
+        "Abalistes stellaris",
+        "Pastinachus sephen",
+        "Pristipomoides multidens"
+      ],
+      "top5_probs": [
+        0.4320448935031891,
+        0.2765926122665405,
+        0.20439988374710083,
+        0.04877197742462158,
+        0.019390758126974106
+      ]
+    },
+    {
+      "image_id": 129182,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9898757338523865,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Ctenochaetus striatus",
+        "Lutjanus fulvus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9898757338523865,
+        0.0067670149728655815,
+        0.0019896638114005327,
+        0.00047505556722171605,
+        0.0004591714823618531
+      ]
+    },
+    {
+      "image_id": 129183,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.9601679444313049,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus oviceps",
+        "Scarus ghobban",
+        "Scarus psittacus",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.9601679444313049,
+        0.0352967232465744,
+        0.0019366692285984755,
+        0.0013409184757620096,
+        0.0007982835522852838
+      ]
+    },
+    {
+      "image_id": 129184,
+      "gt": "Sparisoma viride",
+      "pred": "Scarus coelestinus",
+      "conf": 0.9706062078475952,
+      "top5": [
+        "Scarus coelestinus",
+        "Scarus oviceps",
+        "Scarus psittacus",
+        "Mycteroperca interstitialis",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.9706062078475952,
+        0.0198878925293684,
+        0.005182943306863308,
+        0.0014978469116613269,
+        0.0009410043712705374
+      ]
+    },
+    {
+      "image_id": 129192,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lutjanus malabaricus",
+      "conf": 0.7779611945152283,
+      "top5": [
+        "Lutjanus malabaricus",
+        "Lachnolaimus maximus",
+        "Lutjanus fulvus",
+        "Lutjanus analis",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.7779611945152283,
+        0.2082495242357254,
+        0.009156200103461742,
+        0.0042423983104527,
+        0.00016269026673398912
+      ]
+    },
+    {
+      "image_id": 129194,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9990329742431641,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Lutjanus malabaricus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9990329742431641,
+        0.0008400566293857992,
+        6.229635619092733e-05,
+        5.156320912647061e-05,
+        8.757418072491419e-06
+      ]
+    },
+    {
+      "image_id": 129200,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9981118440628052,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.9981118440628052,
+        0.0018813778879120946,
+        2.4711723654036177e-06,
+        1.4749798538105097e-06,
+        8.174935146598727e-07
+      ]
+    },
+    {
+      "image_id": 129203,
+      "gt": "Sparisoma viride",
+      "pred": "Scarus coelestinus",
+      "conf": 0.6246811151504517,
+      "top5": [
+        "Scarus coelestinus",
+        "Sparisoma viride",
+        "Arothron nigropunctatus",
+        "Arothron meleagris",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.6246811151504517,
+        0.3518677353858948,
+        0.015203649178147316,
+        0.0033447325695306063,
+        0.0012219313066452742
+      ]
+    },
+    {
+      "image_id": 129205,
+      "gt": "Epinephelus itajara",
+      "pred": "Epinephelus itajara",
+      "conf": 0.9053857326507568,
+      "top5": [
+        "Epinephelus itajara",
+        "Epinephelus malabaricus",
+        "Epinephelus sexfasciatus",
+        "Epinephelus morio",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.9053857326507568,
+        0.051389120519161224,
+        0.02091730758547783,
+        0.01698697917163372,
+        0.002587586408481002
+      ]
+    },
+    {
+      "image_id": 129208,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus sexfasciatus",
+      "conf": 0.45864230394363403,
+      "top5": [
+        "Epinephelus sexfasciatus",
+        "Lachnolaimus maximus",
+        "Rhinecanthus aculeatus",
+        "Acanthurus triostegus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.45864230394363403,
+        0.25300726294517517,
+        0.15121938288211823,
+        0.02850055694580078,
+        0.02493355982005596
+      ]
+    },
+    {
+      "image_id": 129209,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.8104188442230225,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Sparisoma viride",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.8104188442230225,
+        0.15406225621700287,
+        0.028668640181422234,
+        0.006293029524385929,
+        0.00044785396312363446
+      ]
+    },
+    {
+      "image_id": 129210,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.9782222509384155,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9782222509384155,
+        0.01584095135331154,
+        0.002903487766161561,
+        0.0027992958202958107,
+        0.00010374284465797246
+      ]
+    },
+    {
+      "image_id": 129211,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.8962587118148804,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.8962587118148804,
+        0.05027668550610542,
+        0.04229717701673508,
+        0.009597926400601864,
+        0.0005837466451339424
+      ]
+    },
+    {
+      "image_id": 129240,
+      "gt": "Scarus coeruleus",
+      "pred": "Scarus coeruleus",
+      "conf": 0.8759586215019226,
+      "top5": [
+        "Scarus coeruleus",
+        "Scarus coelestinus",
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Sparisoma viride"
+      ],
+      "top5_probs": [
+        0.8759586215019226,
+        0.08774329721927643,
+        0.03226418420672417,
+        0.0025044677313417196,
+        0.0011096267262473702
+      ]
+    },
+    {
+      "image_id": 129248,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Ocyurus chrysurus",
+      "conf": 0.9689225554466248,
+      "top5": [
+        "Ocyurus chrysurus",
+        "Lutjanus analis",
+        "Nemipterus japonicus",
+        "Mycteroperca interstitialis",
+        "Pristipomoides multidens"
+      ],
+      "top5_probs": [
+        0.9689225554466248,
+        0.014166785404086113,
+        0.008060944266617298,
+        0.003475973615422845,
+        0.0020404127426445484
+      ]
+    },
+    {
+      "image_id": 129250,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Scomberomorus guttatus",
+      "conf": 0.5218042731285095,
+      "top5": [
+        "Scomberomorus guttatus",
+        "Abalistes stellaris",
+        "Pastinachus sephen",
+        "Sardinella gibbosa",
+        "Mulloidichthys flavolineatus"
+      ],
+      "top5_probs": [
+        0.5218042731285095,
+        0.1313307285308838,
+        0.10706600546836853,
+        0.062263838946819305,
+        0.03712091222405434
+      ]
+    },
+    {
+      "image_id": 129251,
+      "gt": "Ocyurus chrysurus",
+      "pred": "Rhynchobatus djiddensis",
+      "conf": 0.41883498430252075,
+      "top5": [
+        "Rhynchobatus djiddensis",
+        "Scomberomorus guttatus",
+        "Scomberomorus commerson",
+        "Pastinachus sephen",
+        "Stolephorus commersonnii"
+      ],
+      "top5_probs": [
+        0.41883498430252075,
+        0.28551605343818665,
+        0.12436025589704514,
+        0.04673366621136665,
+        0.033522091805934906
+      ]
+    },
+    {
+      "image_id": 129267,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Acanthurus nigrofuscus",
+      "conf": 0.775738000869751,
+      "top5": [
+        "Acanthurus nigrofuscus",
+        "Ctenochaetus striatus",
+        "Acanthurus lineatus",
+        "Acanthurus triostegus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.775738000869751,
+        0.10383288562297821,
+        0.07446520030498505,
+        0.03302798047661781,
+        0.004329866264015436
+      ]
+    },
+    {
+      "image_id": 129268,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Ctenochaetus striatus",
+      "conf": 0.8652788996696472,
+      "top5": [
+        "Ctenochaetus striatus",
+        "Lachnolaimus maximus",
+        "Acanthurus nigrofuscus",
+        "Acanthurus triostegus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.8652788996696472,
+        0.09139440208673477,
+        0.01920970529317856,
+        0.014385155402123928,
+        0.0038991468027234077
+      ]
+    },
+    {
+      "image_id": 129269,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.6529403924942017,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Acanthurus nigrofuscus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.6529403924942017,
+        0.29896870255470276,
+        0.022549087181687355,
+        0.009029518812894821,
+        0.005097043234854937
+      ]
+    },
+    {
+      "image_id": 129273,
+      "gt": "Sparisoma viride",
+      "pred": "Scarus coelestinus",
+      "conf": 0.7190275192260742,
+      "top5": [
+        "Scarus coelestinus",
+        "Epinephelus morio",
+        "Epinephelus sexfasciatus",
+        "Epinephelus malabaricus",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.7190275192260742,
+        0.16545693576335907,
+        0.038144003599882126,
+        0.015616036020219326,
+        0.009827518835663795
+      ]
+    },
+    {
+      "image_id": 129275,
+      "gt": "Sparisoma viride",
+      "pred": "Aetobatus narinari",
+      "conf": 0.536652684211731,
+      "top5": [
+        "Aetobatus narinari",
+        "Abalistes stellaris",
+        "Scarus coelestinus",
+        "Pristipomoides multidens",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.536652684211731,
+        0.12479113787412643,
+        0.1165415346622467,
+        0.10113375633955002,
+        0.02193429134786129
+      ]
+    },
+    {
+      "image_id": 129276,
+      "gt": "Sparisoma viride",
+      "pred": "Scarus coelestinus",
+      "conf": 0.7806649804115295,
+      "top5": [
+        "Scarus coelestinus",
+        "Epinephelus sexfasciatus",
+        "Sparisoma viride",
+        "Epinephelus itajara",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.7806649804115295,
+        0.07254835963249207,
+        0.06815314292907715,
+        0.021428247913718224,
+        0.020629601553082466
+      ]
+    },
+    {
+      "image_id": 129278,
+      "gt": "Sparisoma viride",
+      "pred": "Aetobatus narinari",
+      "conf": 0.36516672372817993,
+      "top5": [
+        "Aetobatus narinari",
+        "Epinephelus malabaricus",
+        "Epinephelus sexfasciatus",
+        "Epinephelus itajara",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.36516672372817993,
+        0.14904485642910004,
+        0.12567363679409027,
+        0.0811828002333641,
+        0.07597874104976654
+      ]
+    },
+    {
+      "image_id": 129280,
+      "gt": "Scarus guacamaia",
+      "pred": "Epinephelus morio",
+      "conf": 0.6018665432929993,
+      "top5": [
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Epinephelus malabaricus",
+        "Mycteroperca bonaci",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.6018665432929993,
+        0.16780628263950348,
+        0.10664829611778259,
+        0.04294572398066521,
+        0.03238314390182495
+      ]
+    },
+    {
+      "image_id": 129281,
+      "gt": "Scarus guacamaia",
+      "pred": "Scarus guacamaia",
+      "conf": 0.5429419279098511,
+      "top5": [
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus psittacus",
+        "Chlorurus sordidus",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.5429419279098511,
+        0.4289473593235016,
+        0.018087951466441154,
+        0.004316338803619146,
+        0.0023526777513325214
+      ]
+    },
+    {
+      "image_id": 129282,
+      "gt": "Scarus guacamaia",
+      "pred": "Cynoglossus lingua",
+      "conf": 0.7006639242172241,
+      "top5": [
+        "Cynoglossus lingua",
+        "Scarus coelestinus",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Scarus ghobban"
+      ],
+      "top5_probs": [
+        0.7006639242172241,
+        0.07371433824300766,
+        0.04887521639466286,
+        0.03517960384488106,
+        0.032408103346824646
+      ]
+    },
+    {
+      "image_id": 129285,
+      "gt": "Scarus guacamaia",
+      "pred": "Scarus guacamaia",
+      "conf": 0.9383108615875244,
+      "top5": [
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus oviceps",
+        "Scarus psittacus",
+        "Scarus coelestinus"
+      ],
+      "top5_probs": [
+        0.9383108615875244,
+        0.03913772851228714,
+        0.011313213966786861,
+        0.009912570007145405,
+        0.0009273601463064551
+      ]
+    },
+    {
+      "image_id": 129287,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9617412090301514,
+      "top5": [
+        "Sparisoma viride",
+        "Epinephelus malabaricus",
+        "Scarus ghobban",
+        "Epinephelus itajara",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.9617412090301514,
+        0.007674304768443108,
+        0.007639400660991669,
+        0.006482980214059353,
+        0.003781301435083151
+      ]
+    },
+    {
+      "image_id": 129294,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lutjanus fulvus",
+      "conf": 0.38791725039482117,
+      "top5": [
+        "Lutjanus fulvus",
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.38791725039482117,
+        0.2851867973804474,
+        0.2659987807273865,
+        0.023432517424225807,
+        0.02191486768424511
+      ]
+    },
+    {
+      "image_id": 129297,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus morio",
+      "conf": 0.9045224189758301,
+      "top5": [
+        "Epinephelus morio",
+        "Epinephelus striatus",
+        "Epinephelus itajara",
+        "Lachnolaimus maximus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.9045224189758301,
+        0.04502888396382332,
+        0.01582248881459236,
+        0.014205659739673138,
+        0.0073041110299527645
+      ]
+    },
+    {
+      "image_id": 129298,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Ctenochaetus striatus",
+      "conf": 0.7939468026161194,
+      "top5": [
+        "Ctenochaetus striatus",
+        "Acanthurus triostegus",
+        "Acanthurus lineatus",
+        "Epinephelus morio",
+        "Epinephelus itajara"
+      ],
+      "top5_probs": [
+        0.7939468026161194,
+        0.05835486575961113,
+        0.05531233549118042,
+        0.054330095648765564,
+        0.007869386114180088
+      ]
+    },
+    {
+      "image_id": 129299,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus morio",
+      "conf": 0.3321581184864044,
+      "top5": [
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Ctenochaetus striatus",
+        "Zebrasoma scopas",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.3321581184864044,
+        0.09856590628623962,
+        0.08368052542209625,
+        0.07841769605875015,
+        0.07282280921936035
+      ]
+    },
+    {
+      "image_id": 129301,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.5723534822463989,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus morio",
+        "Rhynchobatus djiddensis",
+        "Stolephorus commersonnii",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.5723534822463989,
+        0.1053072065114975,
+        0.09941119700670242,
+        0.05812511593103409,
+        0.027985502034425735
+      ]
+    },
+    {
+      "image_id": 129303,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9204792380332947,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus fulvus",
+        "Ctenochaetus striatus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9204792380332947,
+        0.045195501297712326,
+        0.026766007766127586,
+        0.004349391907453537,
+        0.0029268686193972826
+      ]
+    },
+    {
+      "image_id": 129304,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.5290095210075378,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Epinephelus morio",
+        "Lutjanus fulvus",
+        "Lutjanus malabaricus"
+      ],
+      "top5_probs": [
+        0.5290095210075378,
+        0.30655404925346375,
+        0.06714526563882828,
+        0.06384526938199997,
+        0.022672777995467186
+      ]
+    },
+    {
+      "image_id": 129305,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9994901418685913,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Epinephelus morio",
+        "Rhynchobatus djiddensis",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.9994901418685913,
+        0.0003189930284861475,
+        7.335628470173106e-05,
+        6.260006921365857e-05,
+        1.2791494555131067e-05
+      ]
+    },
+    {
+      "image_id": 129306,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9955846667289734,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Halichoeres trimaculatus",
+        "Lutjanus malabaricus",
+        "Arothron nigropunctatus"
+      ],
+      "top5_probs": [
+        0.9955846667289734,
+        0.0017728024395182729,
+        0.0010791298700496554,
+        0.0003895073023159057,
+        0.00020651883096434176
+      ]
+    },
+    {
+      "image_id": 129309,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.5776070952415466,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Epinephelus morio",
+        "Scarus coelestinus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.5776070952415466,
+        0.40654313564300537,
+        0.01087296660989523,
+        0.0012572647538036108,
+        0.0010615297360345721
+      ]
+    },
+    {
+      "image_id": 129311,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.676730215549469,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Arothron nigropunctatus",
+        "Mycteroperca bonaci",
+        "Acanthurus lineatus"
+      ],
+      "top5_probs": [
+        0.676730215549469,
+        0.29391995072364807,
+        0.011915956623852253,
+        0.005235567688941956,
+        0.0027999188750982285
+      ]
+    },
+    {
+      "image_id": 129312,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Ctenochaetus striatus",
+      "conf": 0.5177645087242126,
+      "top5": [
+        "Ctenochaetus striatus",
+        "Arothron nigropunctatus",
+        "Lachnolaimus maximus",
+        "Acanthurus lineatus",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.5177645087242126,
+        0.291208416223526,
+        0.11055807769298553,
+        0.01626528799533844,
+        0.009262379258871078
+      ]
+    },
+    {
+      "image_id": 129320,
+      "gt": "Mycteroperca bonaci",
+      "pred": "Scarus coelestinus",
+      "conf": 0.37630948424339294,
+      "top5": [
+        "Scarus coelestinus",
+        "Mycteroperca bonaci",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.37630948424339294,
+        0.18384478986263275,
+        0.16947819292545319,
+        0.1548447161912918,
+        0.07442579418420792
+      ]
+    },
+    {
+      "image_id": 129326,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9290237426757812,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Parupeneus multifasciatus",
+        "Pastinachus sephen",
+        "Epinephelus malabaricus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.9290237426757812,
+        0.04203280061483383,
+        0.011939086951315403,
+        0.005849937908351421,
+        0.005672095809131861
+      ]
+    },
+    {
+      "image_id": 129327,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Parupeneus multifasciatus",
+      "conf": 0.8634883761405945,
+      "top5": [
+        "Parupeneus multifasciatus",
+        "Stolephorus commersonnii",
+        "Pastinachus sephen",
+        "Lachnolaimus maximus",
+        "Anodontostoma chacunda"
+      ],
+      "top5_probs": [
+        0.8634883761405945,
+        0.04865599423646927,
+        0.03327518701553345,
+        0.03220248967409134,
+        0.015153058804571629
+      ]
+    },
+    {
+      "image_id": 129329,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.3433975577354431,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Pastinachus sephen",
+        "Epinephelus malabaricus",
+        "Epinephelus coioides",
+        "Anodontostoma chacunda"
+      ],
+      "top5_probs": [
+        0.3433975577354431,
+        0.2127629518508911,
+        0.1633502095937729,
+        0.1345333606004715,
+        0.05203111842274666
+      ]
+    },
+    {
+      "image_id": 129340,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus sexfasciatus",
+      "conf": 0.9296485185623169,
+      "top5": [
+        "Epinephelus sexfasciatus",
+        "Epinephelus striatus",
+        "Epinephelus malabaricus",
+        "Epinephelus itajara",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.9296485185623169,
+        0.05452166870236397,
+        0.011037859134376049,
+        0.0036958942655473948,
+        0.00037687725853174925
+      ]
+    },
+    {
+      "image_id": 129342,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9998306035995483,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Lutjanus malabaricus",
+        "Mycteroperca interstitialis",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9998306035995483,
+        4.797248402610421e-05,
+        4.084531974513084e-05,
+        3.4589415008667856e-05,
+        2.636397948663216e-05
+      ]
+    },
+    {
+      "image_id": 129343,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.995636522769928,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus sexfasciatus",
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.995636522769928,
+        0.0022362046875059605,
+        0.0013877071905881166,
+        0.0003586210950743407,
+        0.0002455979702062905
+      ]
+    },
+    {
+      "image_id": 129344,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9993414282798767,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus sexfasciatus",
+        "Mycteroperca bonaci",
+        "Epinephelus itajara",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.9993414282798767,
+        0.0004863672947976738,
+        5.969855556031689e-05,
+        5.6911329011199996e-05,
+        4.07351108151488e-05
+      ]
+    },
+    {
+      "image_id": 129345,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.729362964630127,
+      "top5": [
+        "Epinephelus striatus",
+        "Acanthurus triostegus",
+        "Epinephelus sexfasciatus",
+        "Lutjanus malabaricus",
+        "Halichoeres trimaculatus"
+      ],
+      "top5_probs": [
+        0.729362964630127,
+        0.24803589284420013,
+        0.010300067253410816,
+        0.0059320032596588135,
+        0.0025109252892434597
+      ]
+    },
+    {
+      "image_id": 129355,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9950844645500183,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Lutjanus malabaricus",
+        "Rhynchobatus djiddensis",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9950844645500183,
+        0.003341909497976303,
+        0.0009458959684707224,
+        0.0002671474649105221,
+        0.00023173989029601216
+      ]
+    },
+    {
+      "image_id": 129357,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9692625999450684,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Lutjanus malabaricus",
+        "Rhynchobatus djiddensis",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9692625999450684,
+        0.02467215433716774,
+        0.003587188431993127,
+        0.0014900555834174156,
+        0.0007604220299981534
+      ]
+    },
+    {
+      "image_id": 129358,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.999976396560669,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Halichoeres trimaculatus",
+        "Ctenochaetus striatus",
+        "Lutjanus analis",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.999976396560669,
+        8.157159754773602e-06,
+        5.249088644632138e-06,
+        4.373414412839338e-06,
+        2.4259861675091088e-06
+      ]
+    },
+    {
+      "image_id": 129359,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus morio",
+      "conf": 0.39041438698768616,
+      "top5": [
+        "Epinephelus morio",
+        "Arothron nigropunctatus",
+        "Lutjanus malabaricus",
+        "Epinephelus malabaricus",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.39041438698768616,
+        0.3019675016403198,
+        0.05988477170467377,
+        0.048490431159734726,
+        0.031934767961502075
+      ]
+    },
+    {
+      "image_id": 129364,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus morio",
+      "conf": 0.9566826820373535,
+      "top5": [
+        "Epinephelus morio",
+        "Mycteroperca interstitialis",
+        "Mycteroperca bonaci",
+        "Epinephelus malabaricus",
+        "Rhynchobatus djiddensis"
+      ],
+      "top5_probs": [
+        0.9566826820373535,
+        0.02137685939669609,
+        0.0053710853680968285,
+        0.004663454834371805,
+        0.003889927640557289
+      ]
+    },
+    {
+      "image_id": 129365,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Abalistes stellaris",
+      "conf": 0.8506099581718445,
+      "top5": [
+        "Abalistes stellaris",
+        "Aetobatus narinari",
+        "Cynoglossus lingua",
+        "Pristipomoides multidens",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.8506099581718445,
+        0.1121736466884613,
+        0.020625505596399307,
+        0.007332988549023867,
+        0.0015105254715308547
+      ]
+    },
+    {
+      "image_id": 129366,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Abalistes stellaris",
+      "conf": 0.4699997901916504,
+      "top5": [
+        "Abalistes stellaris",
+        "Aetobatus narinari",
+        "Epinephelus morio",
+        "Mycteroperca interstitialis",
+        "Epinephelus malabaricus"
+      ],
+      "top5_probs": [
+        0.4699997901916504,
+        0.11048325151205063,
+        0.0742601603269577,
+        0.061235461384058,
+        0.05903103947639465
+      ]
+    },
+    {
+      "image_id": 129370,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Aetobatus narinari",
+      "conf": 0.534797191619873,
+      "top5": [
+        "Aetobatus narinari",
+        "Rhynchobatus djiddensis",
+        "Cynoglossus lingua",
+        "Pastinachus sephen",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.534797191619873,
+        0.41795358061790466,
+        0.02298562601208687,
+        0.016682911664247513,
+        0.0019133026944473386
+      ]
+    },
+    {
+      "image_id": 129372,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus morio",
+      "conf": 0.9307920336723328,
+      "top5": [
+        "Epinephelus morio",
+        "Lutjanus griseus",
+        "Mycteroperca bonaci",
+        "Mycteroperca interstitialis",
+        "Epinephelus itajara"
+      ],
+      "top5_probs": [
+        0.9307920336723328,
+        0.02173561044037342,
+        0.01437337789684534,
+        0.010047219693660736,
+        0.008051731623709202
+      ]
+    },
+    {
+      "image_id": 129378,
+      "gt": "Sparisoma viride",
+      "pred": "Aetobatus narinari",
+      "conf": 0.3227376639842987,
+      "top5": [
+        "Aetobatus narinari",
+        "Pristipomoides multidens",
+        "Cynoglossus lingua",
+        "Epinephelus morio",
+        "Epinephelus itajara"
+      ],
+      "top5_probs": [
+        0.3227376639842987,
+        0.21237148344516754,
+        0.15520133078098297,
+        0.09182054549455643,
+        0.06433992087841034
+      ]
+    },
+    {
+      "image_id": 129381,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.7752880454063416,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus oviceps",
+        "Halichoeres trimaculatus",
+        "Halichoeres hortulanus",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.7752880454063416,
+        0.0881110355257988,
+        0.031893689185380936,
+        0.021999353542923927,
+        0.017062673345208168
+      ]
+    },
+    {
+      "image_id": 129383,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.984255850315094,
+      "top5": [
+        "Sparisoma viride",
+        "Halichoeres trimaculatus",
+        "Scarus coelestinus",
+        "Scarus guacamaia",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.984255850315094,
+        0.008319173008203506,
+        0.004067468922585249,
+        0.001375654828734696,
+        0.0005751911667175591
+      ]
+    },
+    {
+      "image_id": 129388,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9991669654846191,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Epinephelus morio",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.9991669654846191,
+        0.00036648730747401714,
+        0.00032454862957820296,
+        0.00013675211812369525,
+        2.0472909909585724e-06
+      ]
+    },
+    {
+      "image_id": 129412,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9915848970413208,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus ghobban",
+        "Scarus coelestinus",
+        "Chlorurus sordidus"
+      ],
+      "top5_probs": [
+        0.9915848970413208,
+        0.0038788935635238886,
+        0.0016702846623957157,
+        0.0012529816012829542,
+        0.0011530376505106688
+      ]
+    },
+    {
+      "image_id": 129419,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Cynoglossus lingua",
+      "conf": 0.3721568286418915,
+      "top5": [
+        "Cynoglossus lingua",
+        "Anodontostoma chacunda",
+        "Epinephelus morio",
+        "Mycteroperca interstitialis",
+        "Stolephorus commersonnii"
+      ],
+      "top5_probs": [
+        0.3721568286418915,
+        0.17574751377105713,
+        0.1703643798828125,
+        0.061334624886512756,
+        0.03479789197444916
+      ]
+    },
+    {
+      "image_id": 129421,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9870476722717285,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Rhynchobatus djiddensis",
+        "Lutjanus malabaricus",
+        "Rachycentron canadum"
+      ],
+      "top5_probs": [
+        0.9870476722717285,
+        0.008328365162014961,
+        0.004193328320980072,
+        0.0002927893365267664,
+        6.156566814752296e-05
+      ]
+    },
+    {
+      "image_id": 129422,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9576470255851746,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Rhynchobatus djiddensis",
+        "Lutjanus malabaricus",
+        "Pristipomoides multidens"
+      ],
+      "top5_probs": [
+        0.9576470255851746,
+        0.036494605243206024,
+        0.005641341209411621,
+        7.09731102688238e-05,
+        6.0074609791627154e-05
+      ]
+    },
+    {
+      "image_id": 129423,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9962521195411682,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus",
+        "Rhynchobatus djiddensis"
+      ],
+      "top5_probs": [
+        0.9962521195411682,
+        0.002264749025925994,
+        0.0010159618686884642,
+        0.00027683775988407433,
+        0.0001284359022974968
+      ]
+    },
+    {
+      "image_id": 129425,
+      "gt": "Lutjanus analis",
+      "pred": "Lutjanus analis",
+      "conf": 0.9251020550727844,
+      "top5": [
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Lachnolaimus maximus",
+        "Lutjanus griseus",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.9251020550727844,
+        0.0538601316511631,
+        0.01045042835175991,
+        0.004365935921669006,
+        0.0035412712022662163
+      ]
+    },
+    {
+      "image_id": 129430,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Pastinachus sephen",
+      "conf": 0.42881283164024353,
+      "top5": [
+        "Pastinachus sephen",
+        "Ctenochaetus striatus",
+        "Epinephelus itajara",
+        "Anodontostoma chacunda",
+        "Aetobatus narinari"
+      ],
+      "top5_probs": [
+        0.42881283164024353,
+        0.41593047976493835,
+        0.11445760726928711,
+        0.009417283348739147,
+        0.007422565948218107
+      ]
+    },
+    {
+      "image_id": 129434,
+      "gt": "Epinephelus itajara",
+      "pred": "Epinephelus itajara",
+      "conf": 0.9718115329742432,
+      "top5": [
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Epinephelus striatus",
+        "Epinephelus coioides"
+      ],
+      "top5_probs": [
+        0.9718115329742432,
+        0.011931288056075573,
+        0.010782516561448574,
+        0.0023384031374007463,
+        0.0013366581406444311
+      ]
+    },
+    {
+      "image_id": 129435,
+      "gt": "Epinephelus itajara",
+      "pred": "Epinephelus itajara",
+      "conf": 0.9846669435501099,
+      "top5": [
+        "Epinephelus itajara",
+        "Epinephelus morio",
+        "Epinephelus malabaricus",
+        "Epinephelus sexfasciatus",
+        "Epinephelus striatus"
+      ],
+      "top5_probs": [
+        0.9846669435501099,
+        0.0065261442214250565,
+        0.004162504803389311,
+        0.002692132256925106,
+        0.0010396213037893176
+      ]
+    },
+    {
+      "image_id": 129438,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.770538330078125,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus",
+        "Rhynchobatus djiddensis"
+      ],
+      "top5_probs": [
+        0.770538330078125,
+        0.22030946612358093,
+        0.005234802607446909,
+        0.0035070208832621574,
+        0.00013786593626718968
+      ]
+    },
+    {
+      "image_id": 129440,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9994738698005676,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus sexfasciatus",
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.9994738698005676,
+        0.0002700304030440748,
+        0.00011506616283440962,
+        4.549685036181472e-05,
+        4.380985046736896e-05
+      ]
+    },
+    {
+      "image_id": 129441,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9986745119094849,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus morio",
+        "Epinephelus sexfasciatus",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.9986745119094849,
+        0.0006642275839112699,
+        0.00042701774509623647,
+        9.782586857909337e-05,
+        7.599325181217864e-05
+      ]
+    },
+    {
+      "image_id": 129442,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lutjanus malabaricus",
+      "conf": 0.8712319731712341,
+      "top5": [
+        "Lutjanus malabaricus",
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Rhynchobatus djiddensis",
+        "Anodontostoma chacunda"
+      ],
+      "top5_probs": [
+        0.8712319731712341,
+        0.1195702776312828,
+        0.00732377776876092,
+        0.000613729062024504,
+        0.0003434850077610463
+      ]
+    },
+    {
+      "image_id": 129444,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.6355299949645996,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Epinephelus morio",
+        "Lutjanus malabaricus",
+        "Arothron nigropunctatus"
+      ],
+      "top5_probs": [
+        0.6355299949645996,
+        0.3071792423725128,
+        0.023601790890097618,
+        0.02292071282863617,
+        0.004207488615065813
+      ]
+    },
+    {
+      "image_id": 129445,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9772664308547974,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.9772664308547974,
+        0.022266898304224014,
+        0.0002950590569525957,
+        9.243804379366338e-05,
+        3.4522607165854424e-05
+      ]
+    },
+    {
+      "image_id": 129446,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9964446425437927,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus guacamaia",
+        "Scarus coelestinus",
+        "Epinephelus morio",
+        "Scarus psittacus"
+      ],
+      "top5_probs": [
+        0.9964446425437927,
+        0.003129140008240938,
+        0.0003763003333006054,
+        2.6253956093569286e-05,
+        8.442898433713708e-06
+      ]
+    },
+    {
+      "image_id": 129447,
+      "gt": "Sparisoma viride",
+      "pred": "Sparisoma viride",
+      "conf": 0.9930605888366699,
+      "top5": [
+        "Sparisoma viride",
+        "Scarus ghobban",
+        "Scarus psittacus",
+        "Scarus coelestinus",
+        "Scarus guacamaia"
+      ],
+      "top5_probs": [
+        0.9930605888366699,
+        0.002004366833716631,
+        0.0017775327432900667,
+        0.001116075087338686,
+        0.0007361259777098894
+      ]
+    },
+    {
+      "image_id": 129453,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Pastinachus sephen",
+      "conf": 0.19412703812122345,
+      "top5": [
+        "Pastinachus sephen",
+        "Acanthurus nigrofuscus",
+        "Halichoeres trimaculatus",
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.19412703812122345,
+        0.18862292170524597,
+        0.15514279901981354,
+        0.14934685826301575,
+        0.0724605992436409
+      ]
+    },
+    {
+      "image_id": 129457,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9189406633377075,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Ctenochaetus striatus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9189406633377075,
+        0.0740518867969513,
+        0.003228576388210058,
+        0.0023569015320390463,
+        0.0005731324781663716
+      ]
+    },
+    {
+      "image_id": 129458,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9824554920196533,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Lutjanus malabaricus",
+        "Rhynchobatus djiddensis",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9824554920196533,
+        0.009052521549165249,
+        0.0044706519693136215,
+        0.0022111753933131695,
+        0.0007912389701232314
+      ]
+    },
+    {
+      "image_id": 129459,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lutjanus malabaricus",
+      "conf": 0.23573286831378937,
+      "top5": [
+        "Lutjanus malabaricus",
+        "Epinephelus morio",
+        "Scarus coelestinus",
+        "Mycteroperca interstitialis",
+        "Epinephelus sexfasciatus"
+      ],
+      "top5_probs": [
+        0.23573286831378937,
+        0.1529957503080368,
+        0.14721599221229553,
+        0.14111897349357605,
+        0.07303526997566223
+      ]
+    },
+    {
+      "image_id": 129461,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.5789740085601807,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.5789740085601807,
+        0.2514592409133911,
+        0.07775948196649551,
+        0.05271314084529877,
+        0.014245577156543732
+      ]
+    },
+    {
+      "image_id": 129462,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9120854139328003,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.9120854139328003,
+        0.06395934522151947,
+        0.013619288802146912,
+        0.008026703260838985,
+        0.0011776844039559364
+      ]
+    },
+    {
+      "image_id": 129474,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999974966049194,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Lutjanus analis",
+        "Pastinachus sephen",
+        "Lutjanus malabaricus"
+      ],
+      "top5_probs": [
+        0.9999974966049194,
+        7.982571901266056e-07,
+        6.885451284688315e-07,
+        4.240692987877992e-07,
+        1.508798419536106e-07
+      ]
+    },
+    {
+      "image_id": 129475,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999735355377197,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Parupeneus multifasciatus",
+        "Lutjanus griseus",
+        "Lutjanus malabaricus"
+      ],
+      "top5_probs": [
+        0.9999735355377197,
+        1.8468985217623413e-05,
+        6.88232194079319e-06,
+        6.259374458750244e-07,
+        1.2908330404570734e-07
+      ]
+    },
+    {
+      "image_id": 78700,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9560073614120483,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9560073614120483,
+        0.0435849092900753,
+        0.00019616256759036332,
+        0.00019481132039800286,
+        9.275359843741171e-06
+      ]
+    },
+    {
+      "image_id": 78701,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.5319538116455078,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.5319538116455078,
+        0.46487656235694885,
+        0.0020040422677993774,
+        0.0011027294676750898,
+        5.030628017266281e-05
+      ]
+    },
+    {
+      "image_id": 78702,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9413406848907471,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.9413406848907471,
+        0.0550091490149498,
+        0.0020067142322659492,
+        0.0016356597188860178,
+        3.337599991937168e-06
+      ]
+    },
+    {
+      "image_id": 78703,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.6171824336051941,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.6171824336051941,
+        0.3751935362815857,
+        0.0038060909137129784,
+        0.003803333267569542,
+        9.159032742900308e-06
+      ]
+    },
+    {
+      "image_id": 78704,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.911591112613678,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.911591112613678,
+        0.08213824033737183,
+        0.006138294003903866,
+        0.00010822335025295615,
+        8.67170365381753e-06
+      ]
+    },
+    {
+      "image_id": 78705,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lutjanus malabaricus",
+      "conf": 0.7701225876808167,
+      "top5": [
+        "Lutjanus malabaricus",
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.7701225876808167,
+        0.2281729280948639,
+        0.0008709458634257317,
+        0.0007688122568652034,
+        4.8063320718938485e-05
+      ]
+    },
+    {
+      "image_id": 78706,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9136692881584167,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.9136692881584167,
+        0.08577756583690643,
+        0.0002934171352535486,
+        0.00024302874226123095,
+        7.906917744548991e-06
+      ]
+    },
+    {
+      "image_id": 78707,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.8404662013053894,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Lutjanus fulvus"
+      ],
+      "top5_probs": [
+        0.8404662013053894,
+        0.15787193179130554,
+        0.0008053617784753442,
+        0.0008044897112995386,
+        3.431528602959588e-05
+      ]
+    },
+    {
+      "image_id": 78716,
+      "gt": "Sparisoma viride",
+      "pred": "Halichoeres trimaculatus",
+      "conf": 0.6581507921218872,
+      "top5": [
+        "Halichoeres trimaculatus",
+        "Scarus oviceps",
+        "Scarus coeruleus",
+        "Scarus coelestinus",
+        "Halichoeres hortulanus"
+      ],
+      "top5_probs": [
+        0.6581507921218872,
+        0.12817080318927765,
+        0.04415377974510193,
+        0.0420815534889698,
+        0.03912852704524994
+      ]
+    },
+    {
+      "image_id": 78718,
+      "gt": "Sparisoma viride",
+      "pred": "Pristipomoides multidens",
+      "conf": 0.6868431568145752,
+      "top5": [
+        "Pristipomoides multidens",
+        "Scarus coelestinus",
+        "Scarus coeruleus",
+        "Halichoeres hortulanus",
+        "Abalistes stellaris"
+      ],
+      "top5_probs": [
+        0.6868431568145752,
+        0.10513211041688919,
+        0.041885875165462494,
+        0.025853419676423073,
+        0.023804932832717896
+      ]
+    },
+    {
+      "image_id": 78720,
+      "gt": "Sparisoma viride",
+      "pred": "Abalistes stellaris",
+      "conf": 0.34958967566490173,
+      "top5": [
+        "Abalistes stellaris",
+        "Pristipomoides multidens",
+        "Cynoglossus lingua",
+        "Anodontostoma chacunda",
+        "Aetobatus narinari"
+      ],
+      "top5_probs": [
+        0.34958967566490173,
+        0.34851381182670593,
+        0.07529696822166443,
+        0.05350731685757637,
+        0.04531848803162575
+      ]
+    },
+    {
+      "image_id": 78729,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Epinephelus morio",
+      "conf": 0.8140257000923157,
+      "top5": [
+        "Epinephelus morio",
+        "Rhynchobatus djiddensis",
+        "Epinephelus itajara",
+        "Mycteroperca interstitialis",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.8140257000923157,
+        0.055380988866090775,
+        0.03970012813806534,
+        0.030388440936803818,
+        0.015030750073492527
+      ]
+    },
+    {
+      "image_id": 78730,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.606532096862793,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Epinephelus striatus",
+        "Halichoeres trimaculatus"
+      ],
+      "top5_probs": [
+        0.606532096862793,
+        0.16795502603054047,
+        0.09918149560689926,
+        0.05172685906291008,
+        0.024830181151628494
+      ]
+    },
+    {
+      "image_id": 78733,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Ctenochaetus striatus",
+      "conf": 0.7718031406402588,
+      "top5": [
+        "Ctenochaetus striatus",
+        "Lachnolaimus maximus",
+        "Stegastes nigricans",
+        "Lutjanus malabaricus",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.7718031406402588,
+        0.1886456310749054,
+        0.02007952705025673,
+        0.009578597731888294,
+        0.007973811589181423
+      ]
+    },
+    {
+      "image_id": 78735,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Ctenochaetus striatus",
+      "conf": 0.6502204537391663,
+      "top5": [
+        "Ctenochaetus striatus",
+        "Lutjanus malabaricus",
+        "Zebrasoma scopas",
+        "Lachnolaimus maximus",
+        "Stegastes nigricans"
+      ],
+      "top5_probs": [
+        0.6502204537391663,
+        0.24550758302211761,
+        0.027556322515010834,
+        0.02531924657523632,
+        0.024269530549645424
+      ]
+    },
+    {
+      "image_id": 78736,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Anodontostoma chacunda",
+      "conf": 0.15055912733078003,
+      "top5": [
+        "Anodontostoma chacunda",
+        "Lutjanus malabaricus",
+        "Epinephelus malabaricus",
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.15055912733078003,
+        0.13976328074932098,
+        0.13105227053165436,
+        0.09983745962381363,
+        0.06901544332504272
+      ]
+    },
+    {
+      "image_id": 78737,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lutjanus analis",
+      "conf": 0.5966804027557373,
+      "top5": [
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Lachnolaimus maximus",
+        "Lutjanus fulvus",
+        "Epinephelus morio"
+      ],
+      "top5_probs": [
+        0.5966804027557373,
+        0.2925713062286377,
+        0.09135183691978455,
+        0.010840309783816338,
+        0.0037275368813425303
+      ]
+    },
+    {
+      "image_id": 78738,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Acanthurus nigrofuscus",
+      "conf": 0.9388274550437927,
+      "top5": [
+        "Acanthurus nigrofuscus",
+        "Acanthurus triostegus",
+        "Ctenochaetus striatus",
+        "Acanthurus lineatus",
+        "Lutjanus malabaricus"
+      ],
+      "top5_probs": [
+        0.9388274550437927,
+        0.05537700280547142,
+        0.003565654158592224,
+        0.0007664549630135298,
+        0.0005409249570220709
+      ]
+    },
+    {
+      "image_id": 78753,
+      "gt": "Epinephelus striatus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.47718581557273865,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Epinephelus striatus",
+        "Lutjanus malabaricus",
+        "Parupeneus multifasciatus",
+        "Lutjanus analis"
+      ],
+      "top5_probs": [
+        0.47718581557273865,
+        0.4665427505970001,
+        0.019216161221265793,
+        0.012786716222763062,
+        0.011488246731460094
+      ]
+    },
+    {
+      "image_id": 78754,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9156872630119324,
+      "top5": [
+        "Epinephelus striatus",
+        "Lachnolaimus maximus",
+        "Mycteroperca bonaci",
+        "Lutjanus analis",
+        "Lutjanus malabaricus"
+      ],
+      "top5_probs": [
+        0.9156872630119324,
+        0.07884324342012405,
+        0.0034618449863046408,
+        0.0011759791523218155,
+        0.0004134599585086107
+      ]
+    },
+    {
+      "image_id": 78755,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.9930410385131836,
+      "top5": [
+        "Epinephelus striatus",
+        "Mycteroperca bonaci",
+        "Epinephelus morio",
+        "Epinephelus sexfasciatus",
+        "Lachnolaimus maximus"
+      ],
+      "top5_probs": [
+        0.9930410385131836,
+        0.005789346992969513,
+        0.0003326227597426623,
+        0.0002431599423289299,
+        0.00017209896759595722
+      ]
+    },
+    {
+      "image_id": 78759,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.8205845952033997,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus sexfasciatus",
+        "Mycteroperca bonaci",
+        "Epinephelus morio",
+        "Epinephelus itajara"
+      ],
+      "top5_probs": [
+        0.8205845952033997,
+        0.07565344870090485,
+        0.0735148936510086,
+        0.016406143084168434,
+        0.008931373246014118
+      ]
+    },
+    {
+      "image_id": 78760,
+      "gt": "Epinephelus striatus",
+      "pred": "Epinephelus striatus",
+      "conf": 0.7801796793937683,
+      "top5": [
+        "Epinephelus striatus",
+        "Epinephelus sexfasciatus",
+        "Epinephelus morio",
+        "Epinephelus itajara",
+        "Mycteroperca bonaci"
+      ],
+      "top5_probs": [
+        0.7801796793937683,
+        0.19239550828933716,
+        0.007306100334972143,
+        0.006955857388675213,
+        0.006836427841335535
+      ]
+    },
+    {
+      "image_id": 78765,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9998823404312134,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.9998823404312134,
+        0.00011277520388830453,
+        3.1734912226966117e-06,
+        9.85666474662139e-07,
+        2.5901269395944837e-07
+      ]
+    },
+    {
+      "image_id": 78767,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9999449253082275,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.9999449253082275,
+        4.9975285946857184e-05,
+        3.2627503969706595e-06,
+        8.089131142696715e-07,
+        3.2726461540733e-07
+      ]
+    },
+    {
+      "image_id": 78768,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.997127115726471,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Lutjanus griseus",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.997127115726471,
+        0.0028113757725805044,
+        3.796966120717116e-05,
+        2.0691917598014697e-05,
+        1.6866416672201012e-06
+      ]
+    },
+    {
+      "image_id": 78769,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9997574687004089,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis",
+        "Lutjanus griseus"
+      ],
+      "top5_probs": [
+        0.9997574687004089,
+        0.00021327486319933087,
+        1.1884028936037794e-05,
+        6.3285810938396025e-06,
+        5.924414381297538e-06
+      ]
+    },
+    {
+      "image_id": 78770,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9883288145065308,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Ctenochaetus striatus",
+        "Stegastes nigricans"
+      ],
+      "top5_probs": [
+        0.9883288145065308,
+        0.011102705262601376,
+        0.00020479486556723714,
+        0.00016389010124839842,
+        8.96021374501288e-05
+      ]
+    },
+    {
+      "image_id": 78771,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9961845278739929,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9961845278739929,
+        0.00366620859131217,
+        0.00012421788414940238,
+        1.2204872291476931e-05,
+        5.788775069959229e-06
+      ]
+    },
+    {
+      "image_id": 78772,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9678093194961548,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Mycteroperca interstitialis"
+      ],
+      "top5_probs": [
+        0.9678093194961548,
+        0.014110404066741467,
+        0.010607422329485416,
+        0.007339730393141508,
+        4.710009670816362e-05
+      ]
+    },
+    {
+      "image_id": 78773,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9185557961463928,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Lutjanus analis",
+        "Pastinachus sephen"
+      ],
+      "top5_probs": [
+        0.9185557961463928,
+        0.07898379862308502,
+        0.0017228086944669485,
+        0.0006715674535371363,
+        2.4355324057978578e-05
+      ]
+    },
+    {
+      "image_id": 78776,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.7564426064491272,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Rhynchobatus djiddensis",
+        "Ctenochaetus striatus"
+      ],
+      "top5_probs": [
+        0.7564426064491272,
+        0.18141606450080872,
+        0.04460468888282776,
+        0.006198960822075605,
+        0.00576481269672513
+      ]
+    },
+    {
+      "image_id": 78777,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9728178381919861,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Halichoeres trimaculatus",
+        "Pristipomoides multidens"
+      ],
+      "top5_probs": [
+        0.9728178381919861,
+        0.020574351772665977,
+        0.0018109960947185755,
+        0.001564801437780261,
+        0.0008389976574108005
+      ]
+    },
+    {
+      "image_id": 78778,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.9997989535331726,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Ctenochaetus striatus",
+        "Lutjanus malabaricus",
+        "Lutjanus analis",
+        "Rhynchobatus djiddensis"
+      ],
+      "top5_probs": [
+        0.9997989535331726,
+        8.452924521407112e-05,
+        6.699323421344161e-05,
+        2.967187356262002e-05,
+        6.317000497801928e-06
+      ]
+    },
+    {
+      "image_id": 78779,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.6320487260818481,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus malabaricus",
+        "Ctenochaetus striatus",
+        "Epinephelus morio",
+        "Stegastes nigricans"
+      ],
+      "top5_probs": [
+        0.6320487260818481,
+        0.18153110146522522,
+        0.08215369284152985,
+        0.07563157379627228,
+        0.014208096079528332
+      ]
+    },
+    {
+      "image_id": 78781,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Lachnolaimus maximus",
+      "conf": 0.873829185962677,
+      "top5": [
+        "Lachnolaimus maximus",
+        "Lutjanus analis",
+        "Lutjanus malabaricus",
+        "Lutjanus griseus",
+        "Halichoeres trimaculatus"
+      ],
+      "top5_probs": [
+        0.873829185962677,
+        0.11267363280057907,
+        0.01302278507500887,
+        0.0001221310521941632,
+        9.152045095106587e-05
+      ]
+    },
+    {
+      "image_id": 78782,
+      "gt": "Lachnolaimus maximus",
+      "pred": "Pristipomoides multidens",
+      "conf": 0.361550509929657,
+      "top5": [
+        "Pristipomoides multidens",
+        "Arothron nigropunctatus",
+        "Anodontostoma chacunda",
+        "Mycteroperca interstitialis",
+        "Lutjanus malabaricus"
+      ],
+      "top5_probs": [
+        0.361550509929657,
+        0.28616058826446533,
+        0.16210238635540009,
+        0.053598422557115555,
+        0.037115782499313354
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Regenerated / large / machine-specific artifacts (rebuildable from scripts)
+gt/
+cache/
+manifest.json
+detections.json
+detections_shard*.json
+testset.ids
+*.log
+*.jpg
+*.png
+qa_contact.jpg
+__pycache__/

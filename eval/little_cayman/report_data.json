@@ -1,0 +1,234 @@
+{
+  "summary": {
+    "n": 351,
+    "det_recall": 0.7806267806267806,
+    "det_matched": 274,
+    "conditions": [
+      {
+        "key": "clf13",
+        "scope": "Classifier-only",
+        "space": "13-species prior",
+        "top1": 0.7749287749287749,
+        "top5": 0.9259259259259259
+      },
+      {
+        "key": "clf69",
+        "scope": "Classifier-only",
+        "space": "69-species open-set",
+        "top1": 0.7236467236467237,
+        "top5": 0.8575498575498576
+      },
+      {
+        "key": "fp13",
+        "scope": "Full pipeline",
+        "space": "13-species prior",
+        "top1": 0.5669515669515669,
+        "top5": 0.6951566951566952,
+        "acc_matched": 0.7262773722627737
+      },
+      {
+        "key": "fp69",
+        "scope": "Full pipeline",
+        "space": "69-species open-set",
+        "top1": 0.5270655270655271,
+        "top5": 0.6381766381766382,
+        "acc_matched": 0.6751824817518248
+      }
+    ]
+  },
+  "per_species": [
+    {
+      "sci": "Lachnolaimus maximus",
+      "common": "Hogfish",
+      "n": 155,
+      "clf13": 0.864516129032258,
+      "clf69": 0.7870967741935484,
+      "det_recall": 0.7483870967741936,
+      "fp13": 0.6451612903225806,
+      "fp69": 0.5806451612903226
+    },
+    {
+      "sci": "Sparisoma viride",
+      "common": "Stoplight Parrotfish",
+      "n": 84,
+      "clf13": 0.7380952380952381,
+      "clf69": 0.7261904761904762,
+      "det_recall": 0.8095238095238095,
+      "fp13": 0.5952380952380952,
+      "fp69": 0.5833333333333334
+    },
+    {
+      "sci": "Scarus coeruleus",
+      "common": "Blue Parrotfish",
+      "n": 26,
+      "clf13": 0.7692307692307693,
+      "clf69": 0.7307692307692307,
+      "det_recall": 0.9615384615384616,
+      "fp13": 0.5,
+      "fp69": 0.5
+    },
+    {
+      "sci": "Mycteroperca bonaci",
+      "common": "Black Grouper",
+      "n": 25,
+      "clf13": 0.12,
+      "clf69": 0.08,
+      "det_recall": 0.52,
+      "fp13": 0.0,
+      "fp69": 0.0
+    },
+    {
+      "sci": "Epinephelus striatus",
+      "common": "Nassau Grouper",
+      "n": 25,
+      "clf13": 0.96,
+      "clf69": 0.92,
+      "det_recall": 0.8,
+      "fp13": 0.6,
+      "fp69": 0.52
+    },
+    {
+      "sci": "Scarus guacamaia",
+      "common": "Rainbow Parrotfish",
+      "n": 12,
+      "clf13": 0.8333333333333334,
+      "clf69": 0.6666666666666666,
+      "det_recall": 1.0,
+      "fp13": 0.5833333333333334,
+      "fp69": 0.5833333333333334
+    },
+    {
+      "sci": "Scarus coelestinus",
+      "common": "Midnight Parrotfish",
+      "n": 10,
+      "clf13": 1.0,
+      "clf69": 1.0,
+      "det_recall": 1.0,
+      "fp13": 1.0,
+      "fp69": 1.0
+    },
+    {
+      "sci": "Ocyurus chrysurus",
+      "common": "Yellowtail Snapper",
+      "n": 10,
+      "clf13": 0.5,
+      "clf69": 0.5,
+      "det_recall": 0.8,
+      "fp13": 0.2,
+      "fp69": 0.1
+    },
+    {
+      "sci": "Epinephelus itajara",
+      "common": "Goliath Grouper",
+      "n": 3,
+      "clf13": 1.0,
+      "clf69": 1.0,
+      "det_recall": 0.6666666666666666,
+      "fp13": 0.6666666666666666,
+      "fp69": 0.6666666666666666
+    },
+    {
+      "sci": "Lutjanus analis",
+      "common": "Mutton Snapper",
+      "n": 1,
+      "clf13": 1.0,
+      "clf69": 1.0,
+      "det_recall": 0.0,
+      "fp13": 0.0,
+      "fp69": 0.0
+    }
+  ],
+  "labels": [
+    "Lachnolaimus maximus",
+    "Sparisoma viride",
+    "Scarus coeruleus",
+    "Mycteroperca bonaci",
+    "Epinephelus striatus",
+    "Scarus guacamaia",
+    "Scarus coelestinus",
+    "Ocyurus chrysurus",
+    "Epinephelus itajara",
+    "Lutjanus analis"
+  ],
+  "common": {
+    "Lachnolaimus maximus": "Hogfish",
+    "Sparisoma viride": "Stoplight Parrotfish",
+    "Mycteroperca bonaci": "Black Grouper",
+    "Epinephelus striatus": "Nassau Grouper",
+    "Scarus coeruleus": "Blue Parrotfish",
+    "Scarus guacamaia": "Rainbow Parrotfish",
+    "Ocyurus chrysurus": "Yellowtail Snapper",
+    "Scarus coelestinus": "Midnight Parrotfish",
+    "Epinephelus itajara": "Goliath Grouper",
+    "Lutjanus analis": "Mutton Snapper",
+    "Epinephelus morio": "Red Grouper",
+    "Lutjanus griseus": "Grey Snapper",
+    "Mycteroperca interstitialis": "Yellowmouth Grouper"
+  },
+  "confusion_clf13": {
+    "Lachnolaimus maximus": {
+      "Lachnolaimus maximus": 134,
+      "Epinephelus striatus": 1,
+      "Epinephelus morio": 14,
+      "Lutjanus analis": 4,
+      "Epinephelus itajara": 1,
+      "Mycteroperca interstitialis": 1
+    },
+    "Sparisoma viride": {
+      "Sparisoma viride": 62,
+      "Scarus coelestinus": 17,
+      "Epinephelus itajara": 2,
+      "Lutjanus analis": 1,
+      "Epinephelus morio": 1,
+      "Scarus coeruleus": 1
+    },
+    "Scarus coeruleus": {
+      "Scarus coeruleus": 20,
+      "Scarus coelestinus": 5,
+      "Sparisoma viride": 1
+    },
+    "Mycteroperca bonaci": {
+      "Epinephelus itajara": 8,
+      "Epinephelus morio": 4,
+      "Lachnolaimus maximus": 1,
+      "Scarus coelestinus": 6,
+      "Mycteroperca bonaci": 3,
+      "Epinephelus striatus": 3
+    },
+    "Epinephelus striatus": {
+      "Epinephelus striatus": 24,
+      "Lachnolaimus maximus": 1
+    },
+    "Scarus guacamaia": {
+      "Scarus guacamaia": 10,
+      "Epinephelus morio": 1,
+      "Scarus coelestinus": 1
+    },
+    "Scarus coelestinus": {
+      "Scarus coelestinus": 10
+    },
+    "Ocyurus chrysurus": {
+      "Ocyurus chrysurus": 5,
+      "Epinephelus striatus": 1,
+      "Mycteroperca interstitialis": 4
+    },
+    "Epinephelus itajara": {
+      "Epinephelus itajara": 3
+    },
+    "Lutjanus analis": {
+      "Lutjanus analis": 1
+    }
+  },
+  "lc_order": [
+    "Lachnolaimus maximus",
+    "Sparisoma viride",
+    "Scarus coeruleus",
+    "Mycteroperca bonaci",
+    "Epinephelus striatus",
+    "Scarus guacamaia",
+    "Scarus coelestinus",
+    "Ocyurus chrysurus",
+    "Epinephelus itajara",
+    "Lutjanus analis"
+  ]
+}
